@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Scensemangar : MonoBehaviour
+public class LevelManager : MonoBehaviour
 {
-  public void MenuControl()
+   public void MenuControl()
   {
     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
   }
@@ -16,5 +16,8 @@ public class Scensemangar : MonoBehaviour
   public void MainMenuSettings()
   {
     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+  }public void MenuSettings()
+  {
+    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
   }
 }

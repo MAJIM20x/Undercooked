@@ -4566,6 +4566,7 @@ GameObject:
   - component: {fileID: 417546248}
   - component: {fileID: 417546252}
   - component: {fileID: 417546247}
+  - component: {fileID: 417546253}
   m_Layer: 0
   m_Name: Jugador4
   m_TagString: Untagged
@@ -4722,6 +4723,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walk: 3
   run: 5
+--- !u!114 &417546253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417546245}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce6750e43a929894a91b52f8094b355c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &417712536
 GameObject:
   m_ObjectHideFlags: 0
@@ -6677,6 +6690,7 @@ GameObject:
   - component: {fileID: 763111514}
   - component: {fileID: 763111509}
   - component: {fileID: 763111515}
+  - component: {fileID: 763111516}
   m_Layer: 0
   m_Name: Jugador
   m_TagString: Untagged
@@ -6853,6 +6867,18 @@ MonoBehaviour:
   currentItem: {fileID: 0}
   rayDist: 2
   animator: {fileID: 763111509}
+--- !u!114 &763111516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763111507}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce6750e43a929894a91b52f8094b355c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &788671389
 GameObject:
   m_ObjectHideFlags: 0
@@ -19615,8 +19641,9 @@ GameObject:
   - component: {fileID: 2103457960}
   - component: {fileID: 2103457954}
   - component: {fileID: 2103457959}
+  - component: {fileID: 2103457961}
   m_Layer: 0
-  m_Name: Jugador 2
+  m_Name: Jugador2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19791,6 +19818,18 @@ MonoBehaviour:
   walk: 3
   run: 8
   animator: {fileID: 2103457954}
+--- !u!114 &2103457961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103457952}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce6750e43a929894a91b52f8094b355c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2121410453
 GameObject:
   m_ObjectHideFlags: 0
@@ -19805,6 +19844,7 @@ GameObject:
   - component: {fileID: 2121410456}
   - component: {fileID: 2121410460}
   - component: {fileID: 2121410455}
+  - component: {fileID: 2121410461}
   m_Layer: 0
   m_Name: Jugador3
   m_TagString: Untagged
@@ -19961,6 +20001,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walk: 3
   run: 5
+--- !u!114 &2121410461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121410453}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce6750e43a929894a91b52f8094b355c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2122219870
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,4 +13,8 @@ public class Scensemangar : MonoBehaviour
   {
     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
   }
+  public void MainMenuSettings()
+  {
+    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+  }
 }

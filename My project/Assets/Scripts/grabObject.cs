@@ -30,6 +30,7 @@ public class grabObject : MonoBehaviour
                     Destroy(grabCheck.collider.gameObject.GetComponent<Rigidbody2D>());
                     //grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
                     hasItem = true;
+                    
                     animator.SetBool("isGrab", true);
 
                 }         

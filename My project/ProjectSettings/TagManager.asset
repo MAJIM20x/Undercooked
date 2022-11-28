@@ -5,11 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Items
+  - Level1
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - valla
   - Water
   - UI
   - 
@@ -42,14 +43,29 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Paredes
-    uniqueID: 1697524407
+  - name: Fondo1
+    uniqueID: 3349875415
+    locked: 0
+  - name: Fondo2
+    uniqueID: 3944864073
+    locked: 0
+  - name: Fondo3
+    uniqueID: 1109814701
+    locked: 0
+  - name: Puerta
+    uniqueID: 1241642107
     locked: 0
   - name: Piso
     uniqueID: 1100950007
     locked: 0
   - name: Piso Exterior Detalles
     uniqueID: 3597467665
+    locked: 0
+  - name: puerta
+    uniqueID: 305535765
+    locked: 0
+  - name: Paredes
+    uniqueID: 1697524407
     locked: 0
   - name: Decoracion exterior
     uniqueID: 3196225691
@@ -63,6 +79,9 @@ TagManager:
   - name: Detalles Techo 4
     uniqueID: 432000559
     locked: 0
+  - name: valla
+    uniqueID: 952692739
+    locked: 0
   - name: Muebles
     uniqueID: 1111020485
     locked: 0
@@ -74,7 +93,4 @@ TagManager:
     locked: 0
   - name: Personaje
     uniqueID: 3196788265
-    locked: 0
-  - name: Platos
-    uniqueID: 3064157453
     locked: 0

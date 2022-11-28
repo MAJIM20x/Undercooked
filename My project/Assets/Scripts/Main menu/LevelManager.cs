@@ -20,4 +20,12 @@ public class LevelManager : MonoBehaviour
   {
     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
   }
+  public void MenuLevel()
+  {
+    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+  }
+  public void MainMenuMenuLevels()
+  {
+    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 3);
+  }
 }

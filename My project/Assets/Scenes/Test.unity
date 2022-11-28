@@ -19359,7 +19359,7 @@ GameObject:
   - component: {fileID: 1586730070}
   - component: {fileID: 1586730069}
   m_Layer: 0
-  m_Name: Grid
+  m_Name: Mapa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

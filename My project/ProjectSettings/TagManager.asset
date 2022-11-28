@@ -78,3 +78,15 @@ TagManager:
   - name: Platos
     uniqueID: 3064157453
     locked: 0
+  - name: Pavimento Detalles
+    uniqueID: 1841440479
+    locked: 0
+  - name: Pared y estructura
+    uniqueID: 2465122429
+    locked: 0
+  - name: Estructuras
+    uniqueID: 2974326837
+    locked: 0
+  - name: Decoraciones
+    uniqueID: 748209835
+    locked: 0

@@ -41,3 +41,27 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+<<<<<<< Updated upstream
+=======
+  - name: fondo0
+    uniqueID: 909004787
+    locked: 0
+  - name: fondo
+    uniqueID: 2872578785
+    locked: 0
+  - name: fondo2
+    uniqueID: 3578456055
+    locked: 0
+  - name: fondo 3
+    uniqueID: 3387487755
+    locked: 0
+  - name: puerta
+    uniqueID: 2354365953
+    locked: 0
+  - name: Player
+    uniqueID: 717159957
+    locked: 0
+  - name: vallas
+    uniqueID: 2682910727
+    locked: 0
+>>>>>>> Stashed changes

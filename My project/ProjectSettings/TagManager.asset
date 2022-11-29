@@ -3,14 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Items
-  - Level1
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - valla
+  - 
   - Water
   - UI
   - 
@@ -43,72 +41,3 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Fondo1
-    uniqueID: 3349875415
-    locked: 0
-  - name: Fondo2
-    uniqueID: 3944864073
-    locked: 0
-  - name: Fondo3
-    uniqueID: 1109814701
-    locked: 0
-  - name: Puerta
-    uniqueID: 1241642107
-    locked: 0
-  - name: Piso
-    uniqueID: 1100950007
-    locked: 0
-  - name: Piso Exterior Detalles
-    uniqueID: 3597467665
-    locked: 0
-  - name: puerta
-    uniqueID: 305535765
-    locked: 0
-  - name: Paredes
-    uniqueID: 1697524407
-    locked: 0
-  - name: Decoracion exterior
-    uniqueID: 3196225691
-    locked: 0
-  - name: Detalles Techo 3
-    uniqueID: 3907415199
-    locked: 0
-  - name: Detalles Techo 2
-    uniqueID: 2307087909
-    locked: 0
-  - name: Detalles Techo 4
-    uniqueID: 432000559
-    locked: 0
-  - name: valla
-    uniqueID: 952692739
-    locked: 0
-  - name: Muebles
-    uniqueID: 1111020485
-    locked: 0
-  - name: Detalles techo
-    uniqueID: 251608831
-    locked: 0
-  - name: Decoracion Interior
-    uniqueID: 3292287439
-    locked: 0
-  - name: Personaje
-    uniqueID: 3196788265
-    locked: 0
-<<<<<<< HEAD
-  - name: Platos
-    uniqueID: 3064157453
-    locked: 0
-  - name: Pavimento Detalles
-    uniqueID: 1841440479
-    locked: 0
-  - name: Pared y estructura
-    uniqueID: 2465122429
-    locked: 0
-  - name: Estructuras
-    uniqueID: 2974326837
-    locked: 0
-  - name: Decoraciones
-    uniqueID: 748209835
-    locked: 0
-=======
->>>>>>> 3260f5e52797e1af4b9463ba2d58a37d1daa5a34

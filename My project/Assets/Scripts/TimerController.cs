@@ -24,6 +24,6 @@ public class TimerController : MonoBehaviour
             timeToDisplay = 0;
         }
         
-        float minutes = Mathf.FloorToInt()
+        float minutes = Mathf.FloorToInt(timeToDisplay);
     }
 }

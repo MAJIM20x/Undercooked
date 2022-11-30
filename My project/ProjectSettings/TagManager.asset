@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Level1
+  - MainMenu
+  - Items
   layers:
   - Default
   - TransparentFX
@@ -41,27 +44,27 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-<<<<<<< Updated upstream
-=======
-  - name: fondo0
-    uniqueID: 909004787
+  - name: Fondo
+    uniqueID: 914753825
     locked: 0
-  - name: fondo
-    uniqueID: 2872578785
+  - name: Fondo2
+    uniqueID: 2430844447
     locked: 0
-  - name: fondo2
-    uniqueID: 3578456055
+  - name: Fondo3
+    uniqueID: 1815768535
     locked: 0
-  - name: fondo 3
-    uniqueID: 3387487755
+  - name: Vallas
+    uniqueID: 3690458881
     locked: 0
-  - name: puerta
-    uniqueID: 2354365953
+  - name: Puerta
+    uniqueID: 1934998783
     locked: 0
-  - name: Player
-    uniqueID: 717159957
+  - name: Estacion
+    uniqueID: 302664641
     locked: 0
-  - name: vallas
-    uniqueID: 2682910727
+  - name: Pared
+    uniqueID: 2823435165
     locked: 0
->>>>>>> Stashed changes
+  - name: Jugardor
+    uniqueID: 3096397317
+    locked: 0

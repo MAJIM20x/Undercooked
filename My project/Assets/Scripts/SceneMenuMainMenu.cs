@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 using UnityEngine.SceneManagement;
-public class SceneMenu : MonoBehaviour
+
+public class SceneMenuMainMenu : MonoBehaviour
 {
     [SerializeField] private bool isInside;
     public Rigidbody2D rb;
@@ -12,9 +12,8 @@ public class SceneMenu : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.gameObject.CompareTag("Player"))
-        {  
+        {
             advice.SetActive(true);
-            
             isInside = true;
         }
     }
@@ -23,6 +22,7 @@ public class SceneMenu : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             advice.SetActive(false);
+
             Debug.Log("Choque");
             isInside = false;
         }
@@ -31,7 +31,7 @@ public class SceneMenu : MonoBehaviour
     private void Update() {
         if(Input.GetKeyDown(KeyCode.F) && isInside)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
             PlayerPrefs.SetInt("posicionX",(int)this.transform.position.x);
             PlayerPrefs.SetInt("posicionY",(int)this.transform.position.y);
             Debug.Log("Cambio escena");

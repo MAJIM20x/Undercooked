@@ -5,6 +5,8 @@ using TMPro;
 
 public class TimerReal : MonoBehaviour
 {
+    public int minutosActuales;
+    public int segundosActuales;
     [SerializeField] int min;
     [SerializeField] int sec;
     [SerializeField] TextMeshProUGUI tiempo;
@@ -24,10 +26,13 @@ public class TimerReal : MonoBehaviour
             int tempMinut = Mathf.FloorToInt(restante/60);
             int tempSec = Mathf.FloorToInt(restante % 60);
             tiempo.text = string.Format("{00:00} : {01:00}", tempMinut, tempSec);
+            minutosActuales = tempMinut;
+            segundosActuales = tempSec;
             if(tempMinut == 10 && tempSec == 0)
             {
                 print("hola");
             }
+
 
         }
     }

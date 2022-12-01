@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class movimientoJugador1 : MonoBehaviour
 {   
@@ -12,52 +13,52 @@ public class movimientoJugador1 : MonoBehaviour
     //Variables no serializadas
     private Rigidbody2D playerRb;
     private Vector2 moveInput;
-    public Animator animator;
-
-    
-    
+    private PlayerInput playerInput;
+    private PlayerInputActions playerInputActions;
+    private Animator animator;
+    private Vector2 inputVector;
     
     
     //Obtener componentes para los metodos
     void Start()
     {
         playerRb = GetComponent<Rigidbody2D>();
+        playerInput = GetComponent<PlayerInput>();
+        animator = GetComponent<Animator>();
+        playerInputActions = new PlayerInputActions();
+        playerInputActions.Enable();
         
     }
-    void Update()
-    {   
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
-        moveInput = new Vector2(moveX, moveY).normalized;
-
+    
+   
+    private void FixedUpdate()
+    {
+       
         
+        inputVector = playerInputActions.Movement.Movement.ReadValue<Vector2>();
+        float moveX = inputVector.x;
+        float moveY = inputVector.y;
         
-        if (moveX != 0 || moveY != 0) {
+        if (moveX != 0 || moveY != 0) 
+        {
             animator.SetFloat("vertical", moveY);
             animator.SetFloat("horizontal", moveX);
             animator.SetFloat("speed", 1);
-
         }
 
         else
         {
             animator.SetFloat("speed", 0);
         }
-        
- 
-        
-    }
 
-    private void FixedUpdate()
-    {
-        playerRb.MovePosition(playerRb.position + moveInput * walk * Time.fixedDeltaTime);
+        playerRb.MovePosition(playerRb.position + inputVector * walk * Time.fixedDeltaTime);
 
-        //Tecla para correr
-        if(Input.GetKey(KeyCode.P))
-        
+        if(playerInputActions.Interactions.Grab_Drop.ReadValue<float>() > 0.1f)
         {
-            playerRb.MovePosition(playerRb.position + moveInput * run * Time.fixedDeltaTime);
+            playerRb.MovePosition(playerRb.position + inputVector * run * Time.fixedDeltaTime);
         }
-
     }
+
+
+
 }

@@ -31589,6 +31589,174 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Paredes_1497
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 240
+        width: 3
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ab6f2bdd3287a47b89aaf9846ffde6
+      internalID: 994129775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paredes_1498
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 257
+        width: 3
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a49b073f470b84e8a3e9bcc6c3eb87
+      internalID: 1832372872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paredes_1499
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 240
+        width: 3
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30e0193d0b7282c4dad13b83530dbb1c
+      internalID: 482199163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paredes_1500
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 258
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33a2728961b8149439764618705baa42
+      internalID: 1091192705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paredes_1501
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 257
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f126653050cd4e4c84523dd4458888f
+      internalID: 1370631766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paredes_1502
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 240
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b61f71ff501a8f41941850c66b414f0
+      internalID: -2107348163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paredes_1503
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 240
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d60a38588f395d449714072802a0098
+      internalID: -1465180964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paredes_1504
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 257
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98c76adf2fc6efc44b0e67c1f177e255
+      internalID: 1874308284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -31610,6 +31778,7 @@ TextureImporter:
       Paredes_701: -1509177380
       Paredes_960: -121175066
       Paredes_857: 656499121
+      Paredes_1499: 482199163
       Paredes_478: 1908638078
       Paredes_1158: 1890138978
       Paredes_173: -106807864
@@ -31629,8 +31798,8 @@ TextureImporter:
       Paredes_284: 391766361
       Paredes_73: 1400680944
       Paredes_1083: 1389852687
-      Paredes_548: -1875669771
       Paredes_1207: -1547711690
+      Paredes_548: -1875669771
       Paredes_349: -2081141894
       Paredes_999: -938685136
       Paredes_346: -1507006622
@@ -31720,6 +31889,7 @@ TextureImporter:
       Paredes_79: 1442610797
       Paredes_976: 58913876
       Paredes_1402: -373335548
+      Paredes_1501: 1370631766
       Paredes_1465: 440874369
       Paredes_265: 708838422
       Paredes_636: 1553810385
@@ -31729,13 +31899,13 @@ TextureImporter:
       Paredes_950: 781073906
       Paredes_70: -1479234664
       Paredes_77: 250884921
-      Paredes_1005: 864802654
+      Paredes_1255: -1938771403
       Paredes_5: 1262515333
       Paredes_542: -1737327828
       Paredes_684: 260937578
-      Paredes_1428: 291720255
-      Paredes_1255: -1938771403
+      Paredes_1005: 864802654
       Paredes_434: 345613825
+      Paredes_1428: 291720255
       Paredes_824: -1272479274
       Paredes_1067: 183714375
       Paredes_669: -962751625
@@ -31837,8 +32007,8 @@ TextureImporter:
       Paredes_986: -675460818
       Paredes_1382: -298114829
       Paredes_845: -765054001
-      Paredes_1027: -663667373
       Paredes_915: -1856970259
+      Paredes_1027: -663667373
       Paredes_1033: -674771113
       Paredes_921: -931764671
       Paredes_270: 1718567474
@@ -32125,6 +32295,7 @@ TextureImporter:
       Paredes_1476: 224189954
       Paredes_1368: 911204555
       Paredes_484: -512761393
+      Paredes_1504: 1874308284
       Paredes_264: 940895115
       Paredes_1153: -519214
       Paredes_366: 1142773391
@@ -32467,6 +32638,7 @@ TextureImporter:
       Paredes_330: -2047161823
       Paredes_269: -1804087698
       Paredes_954: -232032129
+      Paredes_1498: 1832372872
       Paredes_1419: 945268754
       Paredes_629: -1588956638
       Paredes_609: 1831992408
@@ -32480,6 +32652,7 @@ TextureImporter:
       Paredes_820: -2056928374
       Paredes_925: -64834726
       Paredes_1025: -665051586
+      Paredes_1497: -898996592
       Paredes_26: -364138192
       Paredes_1374: -1166822922
       Paredes_1492: -2083434999
@@ -32562,6 +32735,7 @@ TextureImporter:
       Paredes_679: 1339568923
       Paredes_838: -1024279793
       Paredes_1309: -1356867394
+      Paredes_1503: -1465180964
       Paredes_739: 1373126937
       Paredes_363: -1935816328
       Paredes_806: 1153047795
@@ -32588,6 +32762,7 @@ TextureImporter:
       Paredes_292: 1501358974
       Paredes_1423: -1667086667
       Paredes_1408: 1043970155
+      Paredes_1502: -2107348163
       Paredes_640: -1429247445
       Paredes_1418: -1784884258
       Paredes_1487: 1657559888
@@ -32824,6 +32999,7 @@ TextureImporter:
       Paredes_1447: 403395509
       Paredes_455: -1738343198
       Paredes_867: 1324184999
+      Paredes_1500: 1091192705
       Paredes_615: -182479933
       Paredes_115: -255211740
       Paredes_65: 2090921105

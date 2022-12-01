@@ -4,8 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< Updated upstream
   - Level1
   - MainMenu
+=======
+>>>>>>> Stashed changes
   - Items
   layers:
   - Default
@@ -44,6 +47,7 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+<<<<<<< Updated upstream
   - name: Fondo
     uniqueID: 914753825
     locked: 0
@@ -67,4 +71,59 @@ TagManager:
     locked: 0
   - name: Jugardor
     uniqueID: 3096397317
+=======
+  - name: Paredes
+    uniqueID: 1697524407
+    locked: 0
+  - name: Piso
+    uniqueID: 1100950007
+    locked: 0
+  - name: Piso Exterior Detalles
+    uniqueID: 3597467665
+    locked: 0
+  - name: Decoracion exterior
+    uniqueID: 3196225691
+    locked: 0
+  - name: Detalles Techo 3
+    uniqueID: 3907415199
+    locked: 0
+  - name: Detalles Techo 2
+    uniqueID: 2307087909
+    locked: 0
+  - name: Detalles Techo 4
+    uniqueID: 432000559
+    locked: 0
+  - name: Muebles
+    uniqueID: 1111020485
+    locked: 0
+  - name: Detalles techo
+    uniqueID: 251608831
+    locked: 0
+  - name: Decoracion Interior
+    uniqueID: 3292287439
+    locked: 0
+  - name: Personaje
+    uniqueID: 3196788265
+    locked: 0
+  - name: Platos
+    uniqueID: 3064157453
+    locked: 0
+  - name: Pavimento Detalles
+    uniqueID: 1841440479
+    locked: 0
+  - name: Pared y estructura
+    uniqueID: 2465122429
+    locked: 0
+  - name: Estructuras
+    uniqueID: 2974326837
+    locked: 0
+  - name: Personas
+    uniqueID: 3234797069
+    locked: 0
+  - name: Decoraciones
+    uniqueID: 748209835
+    locked: 0
+  - name: Fisico
+    uniqueID: 1511398477
+>>>>>>> Stashed changes
     locked: 0

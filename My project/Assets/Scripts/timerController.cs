@@ -1,29 +1,42 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
-public class TimerController : MonoBehaviour
+public class timerController : MonoBehaviour
 {
-    public float timeValue = 90;
-    void Update()
-    {   
-        if(timeValue > 0)
-        {
-        timeValue -= Time.deltaTime;
-        }
-        else
-        {
-            timeValue = 0;
-        }
-    }
 
-    void displayTime(float timeToDisplay)
+    [SerializeField] private TMP_Text timerText;
+
+    [SerializeField, Tooltip("tiempo en segundos")] private float timerTime;
+    private int minutes, seconds;
+
+    private void Update()
     {
-        if(timeToDisplay < 0)
+        timerTime -= Time.deltaTime;
+
+        if(timerTime < 0)
+        
         {
-            timeToDisplay = 0;
+
+          timerTime = 0;
+        
         }
         
-        float minutes = Mathf.FloorToInt(timeToDisplay);
+        
+        
+        minutes = (int)(timerTime /60f);
+        
+        seconds = (int)(timerTime - minutes * 60f);
+        
+
+        timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    
+        if(timerTime == 0)
+        {
+            timerText.text = "FIN DEL TIEMPO";
+        }
+    
     }
+
 }

@@ -4,7 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Items
+  - Player1
+  - Player2
+  - Player3
+  - Player4
   layers:
   - Default
   - TransparentFX
@@ -43,41 +46,47 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Piso
-    uniqueID: 3090197171
+    uniqueID: 2078542271
+    locked: 0
+  - name: PisoEx
+    uniqueID: 3914295409
     locked: 0
   - name: Paredes
-    uniqueID: 9833777
+    uniqueID: 304989855
+    locked: 0
+  - name: DetalleTecho
+    uniqueID: 1825732517
+    locked: 0
+  - name: DetalleTecho2
+    uniqueID: 577928075
+    locked: 0
+  - name: DetalleTecho3
+    uniqueID: 750239273
+    locked: 0
+  - name: DetalleTecho4
+    uniqueID: 3998340807
     locked: 0
   - name: PisoExterior
-    uniqueID: 2822083833
-    locked: 0
-  - name: DetallesTecho
-    uniqueID: 2642929899
-    locked: 0
-  - name: DetallesTecho2
-    uniqueID: 623552905
-    locked: 0
-  - name: DetallesTecho3
-    uniqueID: 122383657
-    locked: 0
-  - name: DetallesTecho4
-    uniqueID: 1879078273
-    locked: 0
-  - name: Muebles
-    uniqueID: 3773431767
-    locked: 0
-  - name: PisoExteriorDetalles
-    uniqueID: 2106399213
-    locked: 0
-  - name: DecoracionExterior
-    uniqueID: 694846007
+    uniqueID: 2268217293
     locked: 0
   - name: DecoracionInterior
-    uniqueID: 3878296703
+    uniqueID: 3018136789
+    locked: 0
+  - name: DecoracionExterior
+    uniqueID: 2097445693
     locked: 0
   - name: DetallesPuerta
-    uniqueID: 4035633703
+    uniqueID: 3050000035
     locked: 0
   - name: Puerta
-    uniqueID: 1088155609
+    uniqueID: 828737801
+    locked: 0
+  - name: 'Mueble '
+    uniqueID: 1675481091
+    locked: 0
+  - name: Plato
+    uniqueID: 2935217077
+    locked: 0
+  - name: jugador
+    uniqueID: 4127319807
     locked: 0

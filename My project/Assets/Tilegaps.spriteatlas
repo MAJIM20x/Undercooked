@@ -1679,6 +1679,7 @@ SpriteAtlas:
   - {fileID: 1709936815, guid: 910520945fd4f384298a012e66533ce7, type: 3}
   - {fileID: 339551861, guid: 910520945fd4f384298a012e66533ce7, type: 3}
   - {fileID: -2137939603, guid: 910520945fd4f384298a012e66533ce7, type: 3}
+  - {fileID: -620203455, guid: 910520945fd4f384298a012e66533ce7, type: 3}
   - {fileID: 938946622, guid: 910520945fd4f384298a012e66533ce7, type: 3}
   - {fileID: 1577740404, guid: 910520945fd4f384298a012e66533ce7, type: 3}
   - {fileID: -1549878176, guid: 910520945fd4f384298a012e66533ce7, type: 3}
@@ -7125,6 +7126,7 @@ SpriteAtlas:
   - Paredes_1220
   - Paredes_848
   - Paredes_1387
+  - Paredes_1505
   - Paredes_1273
   - Paredes_1223
   - Paredes_849

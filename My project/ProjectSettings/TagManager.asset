@@ -4,20 +4,30 @@
 TagManager:
   serializedVersion: 2
   tags:
-<<<<<<< Updated upstream
   - Player1
   - Player2
   - Player3
   - Player4
-=======
   - Items
+  - Plato
   - Holder
->>>>>>> Stashed changes
+  - Level1
+  - MainMenu
+  - Comida
+  - Tomate
+  - Pollo
+  - Lechuga
+  - Carne
+  - Pan
+  - Pescado
+  - Papa
+  - Palta
+  - Arroz
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - plato
   - Water
   - UI
   - 
@@ -51,7 +61,6 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Piso
-<<<<<<< Updated upstream
     uniqueID: 2078542271
     locked: 0
   - name: PisoEx
@@ -95,28 +104,4 @@ TagManager:
     locked: 0
   - name: jugador
     uniqueID: 4127319807
-=======
-    uniqueID: 4230929519
-    locked: 0
-  - name: Cocina
-    uniqueID: 2152534717
-    locked: 0
-  - name: Paredes
-    uniqueID: 289370437
-    locked: 0
-  - name: Techo Bordes
-    uniqueID: 2892584887
-    locked: 0
-  - name: Techo F
-    uniqueID: 23066065
-    locked: 0
-  - name: CocinaInteractiva
-    uniqueID: 1254716369
-    locked: 0
-  - name: Jugadores
-    uniqueID: 1937424785
-    locked: 0
-  - name: Platos
-    uniqueID: 2767898629
->>>>>>> Stashed changes
     locked: 0

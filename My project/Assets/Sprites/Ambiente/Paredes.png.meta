@@ -31745,7 +31745,7 @@ TextureImporter:
         width: 8
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -31753,6 +31753,27 @@ TextureImporter:
       bones: []
       spriteID: 98c76adf2fc6efc44b0e67c1f177e255
       internalID: 1874308284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paredes_1505
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 272
+        width: 4
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc1e4f49e399bf5468578891d08765ee
+      internalID: -620203455
       vertices: []
       indices: 
       edges: []
@@ -32993,6 +33014,7 @@ TextureImporter:
       Paredes_1292: -409943424
       Paredes_852: 1096572229
       Paredes_195: 1722384340
+      Paredes_1505: -913402135
       Paredes_1375: 820507698
       Paredes_536: 1675081817
       Paredes_738: -920036781

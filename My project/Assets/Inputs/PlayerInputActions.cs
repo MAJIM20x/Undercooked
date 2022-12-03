@@ -35,6 +35,15 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""MovementDpad"",
+                    ""type"": ""Value"",
+                    ""id"": ""a08770f6-6908-4d36-9674-f6f18ad205ef"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -48,6 +57,17 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""25ffcf1a-1e77-4641-b895-3a967fe6803e"",
+                    ""path"": ""<Gamepad>/dpad"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MovementDpad"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -56,13 +76,13 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
             ""id"": ""629ff90e-f3a9-4186-bc64-8fcb02525f44"",
             ""actions"": [
                 {
-                    ""name"": ""Grab_Drop"",
-                    ""type"": ""Button"",
+                    ""name"": ""Grab"",
+                    ""type"": ""Value"",
                     ""id"": ""595f2798-21fe-4a8b-a1c5-2b7381504224"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
-                    ""initialStateCheck"": false
+                    ""initialStateCheck"": true
                 },
                 {
                     ""name"": ""Dash"",
@@ -72,28 +92,48 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Drop"",
+                    ""type"": ""Value"",
+                    ""id"": ""e351b320-13d8-4e19-a810-17379f625022"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
                 {
                     ""name"": """",
                     ""id"": ""ab238732-cdda-4aa4-84cd-f0005643f516"",
-                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""path"": ""<Gamepad>/buttonWest"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Grab_Drop"",
+                    ""action"": ""Grab"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
                     ""id"": ""8ad69d3b-8456-4d9d-b5cd-372adc5a4f0e"",
-                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6b0e228f-59dd-49cd-84a0-2965b7ad276c"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Drop"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -105,10 +145,12 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         // Movement
         m_Movement = asset.FindActionMap("Movement", throwIfNotFound: true);
         m_Movement_Movement = m_Movement.FindAction("Movement", throwIfNotFound: true);
+        m_Movement_MovementDpad = m_Movement.FindAction("MovementDpad", throwIfNotFound: true);
         // Interactions
         m_Interactions = asset.FindActionMap("Interactions", throwIfNotFound: true);
-        m_Interactions_Grab_Drop = m_Interactions.FindAction("Grab_Drop", throwIfNotFound: true);
+        m_Interactions_Grab = m_Interactions.FindAction("Grab", throwIfNotFound: true);
         m_Interactions_Dash = m_Interactions.FindAction("Dash", throwIfNotFound: true);
+        m_Interactions_Drop = m_Interactions.FindAction("Drop", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -169,11 +211,13 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Movement;
     private IMovementActions m_MovementActionsCallbackInterface;
     private readonly InputAction m_Movement_Movement;
+    private readonly InputAction m_Movement_MovementDpad;
     public struct MovementActions
     {
         private @PlayerInputActions m_Wrapper;
         public MovementActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_Movement_Movement;
+        public InputAction @MovementDpad => m_Wrapper.m_Movement_MovementDpad;
         public InputActionMap Get() { return m_Wrapper.m_Movement; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -186,6 +230,9 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 @Movement.started -= m_Wrapper.m_MovementActionsCallbackInterface.OnMovement;
                 @Movement.performed -= m_Wrapper.m_MovementActionsCallbackInterface.OnMovement;
                 @Movement.canceled -= m_Wrapper.m_MovementActionsCallbackInterface.OnMovement;
+                @MovementDpad.started -= m_Wrapper.m_MovementActionsCallbackInterface.OnMovementDpad;
+                @MovementDpad.performed -= m_Wrapper.m_MovementActionsCallbackInterface.OnMovementDpad;
+                @MovementDpad.canceled -= m_Wrapper.m_MovementActionsCallbackInterface.OnMovementDpad;
             }
             m_Wrapper.m_MovementActionsCallbackInterface = instance;
             if (instance != null)
@@ -193,6 +240,9 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 @Movement.started += instance.OnMovement;
                 @Movement.performed += instance.OnMovement;
                 @Movement.canceled += instance.OnMovement;
+                @MovementDpad.started += instance.OnMovementDpad;
+                @MovementDpad.performed += instance.OnMovementDpad;
+                @MovementDpad.canceled += instance.OnMovementDpad;
             }
         }
     }
@@ -201,14 +251,16 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
     // Interactions
     private readonly InputActionMap m_Interactions;
     private IInteractionsActions m_InteractionsActionsCallbackInterface;
-    private readonly InputAction m_Interactions_Grab_Drop;
+    private readonly InputAction m_Interactions_Grab;
     private readonly InputAction m_Interactions_Dash;
+    private readonly InputAction m_Interactions_Drop;
     public struct InteractionsActions
     {
         private @PlayerInputActions m_Wrapper;
         public InteractionsActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Grab_Drop => m_Wrapper.m_Interactions_Grab_Drop;
+        public InputAction @Grab => m_Wrapper.m_Interactions_Grab;
         public InputAction @Dash => m_Wrapper.m_Interactions_Dash;
+        public InputAction @Drop => m_Wrapper.m_Interactions_Drop;
         public InputActionMap Get() { return m_Wrapper.m_Interactions; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -218,22 +270,28 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         {
             if (m_Wrapper.m_InteractionsActionsCallbackInterface != null)
             {
-                @Grab_Drop.started -= m_Wrapper.m_InteractionsActionsCallbackInterface.OnGrab_Drop;
-                @Grab_Drop.performed -= m_Wrapper.m_InteractionsActionsCallbackInterface.OnGrab_Drop;
-                @Grab_Drop.canceled -= m_Wrapper.m_InteractionsActionsCallbackInterface.OnGrab_Drop;
+                @Grab.started -= m_Wrapper.m_InteractionsActionsCallbackInterface.OnGrab;
+                @Grab.performed -= m_Wrapper.m_InteractionsActionsCallbackInterface.OnGrab;
+                @Grab.canceled -= m_Wrapper.m_InteractionsActionsCallbackInterface.OnGrab;
                 @Dash.started -= m_Wrapper.m_InteractionsActionsCallbackInterface.OnDash;
                 @Dash.performed -= m_Wrapper.m_InteractionsActionsCallbackInterface.OnDash;
                 @Dash.canceled -= m_Wrapper.m_InteractionsActionsCallbackInterface.OnDash;
+                @Drop.started -= m_Wrapper.m_InteractionsActionsCallbackInterface.OnDrop;
+                @Drop.performed -= m_Wrapper.m_InteractionsActionsCallbackInterface.OnDrop;
+                @Drop.canceled -= m_Wrapper.m_InteractionsActionsCallbackInterface.OnDrop;
             }
             m_Wrapper.m_InteractionsActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @Grab_Drop.started += instance.OnGrab_Drop;
-                @Grab_Drop.performed += instance.OnGrab_Drop;
-                @Grab_Drop.canceled += instance.OnGrab_Drop;
+                @Grab.started += instance.OnGrab;
+                @Grab.performed += instance.OnGrab;
+                @Grab.canceled += instance.OnGrab;
                 @Dash.started += instance.OnDash;
                 @Dash.performed += instance.OnDash;
                 @Dash.canceled += instance.OnDash;
+                @Drop.started += instance.OnDrop;
+                @Drop.performed += instance.OnDrop;
+                @Drop.canceled += instance.OnDrop;
             }
         }
     }
@@ -241,10 +299,12 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
     public interface IMovementActions
     {
         void OnMovement(InputAction.CallbackContext context);
+        void OnMovementDpad(InputAction.CallbackContext context);
     }
     public interface IInteractionsActions
     {
-        void OnGrab_Drop(InputAction.CallbackContext context);
+        void OnGrab(InputAction.CallbackContext context);
         void OnDash(InputAction.CallbackContext context);
+        void OnDrop(InputAction.CallbackContext context);
     }
 }

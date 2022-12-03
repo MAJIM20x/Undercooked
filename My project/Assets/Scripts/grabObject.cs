@@ -3,13 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class grabObject : MonoBehaviour
-{
+{  
+    //Variables Publicas
     public Transform grabDetect;
     public Transform grabItem;
     public Transform currentItem;
     public float rayDist;
-    private bool hasItem = false;
     public Animator animator;
+    
+    //Variables privadas 
+    private bool hasItem = false;
+    
+    //
     [SerializeField] bool isOnRange = false;
     private GameObject currentCollisionesItem;
 

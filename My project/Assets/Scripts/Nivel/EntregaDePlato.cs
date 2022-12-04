@@ -8,7 +8,7 @@ public class EntregaDePlato : MonoBehaviour
     public Transform[] posicionPlato;
     public Rigidbody2D mueble;
     public PlayerInputActions playerInputActions;
-
+    public Cliente cliente;
     public GeneradorDePlatos generadorDePlatos;
     TimerReal tiempo;
 
@@ -39,7 +39,8 @@ public class EntregaDePlato : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Q) && isInside)
             {
                 
-                                
+                
+                
                 generadorDePlatos.nuevo.SetActive(false);
                 int condicion = tiempo.segundosActuales- 5;
                 generadorDePlatos.cont--;

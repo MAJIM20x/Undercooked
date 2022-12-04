@@ -11,7 +11,7 @@ public class Cliente : MonoBehaviour
     public GameObject[] Pollito;
     public GameObject[] Sushi;
     public System.Random random = new System.Random();
-    private List<GameObject[]> listaComidas;
+    public List<GameObject[]> listaComidas;
     public TimerReal timerReal;
     public int valorActual;
 

@@ -50,7 +50,7 @@ public class ComodiaAleatoria : MonoBehaviour
                     comida = Instantiate(prefab[contador],new Vector3(posicionGeneradorComida.position.x,posicionGeneradorComida.position.y,0),Quaternion.identity);
                     comida.SetActive(true);
                     comida.tag = "Items";
-                    comida.layer = contador;
+                    comida.layer = contador+6;
 
                 }
         }

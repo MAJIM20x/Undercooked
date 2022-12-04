@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -107,6 +107,18 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -64415,9 +64427,9 @@ TextureImporter:
       Curly_Hair_859: -1720604381
       Curly_Hair_1846: 1039816913
       Curly_Hair_1196: -920462026
+      Curly_Hair_2333: -757212157
       Curly_Hair_286: -886506019
       Curly_Hair_1166: 152810250
-      Curly_Hair_2333: -757212157
       Curly_Hair_2211: -1238295850
       Curly_Hair_2237: -777172158
       Curly_Hair_2881: -568434448
@@ -64437,13 +64449,13 @@ TextureImporter:
       Curly_Hair_863: 530990995
       Curly_Hair_221: -240831677
       Curly_Hair_2374: 422540569
+      Curly_Hair_2478: 266704779
       Curly_Hair_393: -172903096
       Curly_Hair_837: 1498057973
       Curly_Hair_1922: 964442226
+      Curly_Hair_2941: 804610678
       Curly_Hair_1964: -1620412164
       Curly_Hair_2011: -1006306675
-      Curly_Hair_2941: 804610678
-      Curly_Hair_2478: 266704779
       Curly_Hair_2176: 1836656635
       Curly_Hair_2688: 1021788800
       Curly_Hair_2704: 1975012141
@@ -64459,12 +64471,12 @@ TextureImporter:
       Curly_Hair_1960: 1533390887
       Curly_Hair_1756: 1233956505
       Curly_Hair_2280: 703523505
-      Curly_Hair_1616: 816804969
+      Curly_Hair_3050: 1217980602
       Curly_Hair_2236: 1653518758
       Curly_Hair_2285: 308269547
       Curly_Hair_1369: 508193112
+      Curly_Hair_1616: 816804969
       Curly_Hair_2291: 1383900342
-      Curly_Hair_3050: 1217980602
       Curly_Hair_2931: -1108905790
       Curly_Hair_2775: -784979646
       Curly_Hair_1201: 401292278
@@ -64588,15 +64600,15 @@ TextureImporter:
       Curly_Hair_410: 321400236
       Curly_Hair_965: 1802571503
       Curly_Hair_732: 1661767515
-      Curly_Hair_847: -1622200007
       Curly_Hair_1010: 2033867592
-      Curly_Hair_2788: -897494450
+      Curly_Hair_2598: 2088898181
+      Curly_Hair_847: -1622200007
       Curly_Hair_203: 1485745639
       Curly_Hair_2432: 743194431
       Curly_Hair_1129: -854047825
       Curly_Hair_178: -1280796252
-      Curly_Hair_2598: 2088898181
       Curly_Hair_326: 830199607
+      Curly_Hair_2788: -897494450
       Curly_Hair_2935: -876833088
       Curly_Hair_2094: -1783866332
       Curly_Hair_212: -389062883
@@ -64612,9 +64624,9 @@ TextureImporter:
       Curly_Hair_2507: -2120230747
       Curly_Hair_44: 1464281525
       Curly_Hair_781: 835234862
-      Curly_Hair_1608: 939237026
       Curly_Hair_2044: -399525732
       Curly_Hair_181: -2034836632
+      Curly_Hair_1608: 939237026
       Curly_Hair_2966: 1826908917
       Curly_Hair_1239: 1275010311
       Curly_Hair_403: -367505286
@@ -64794,8 +64806,8 @@ TextureImporter:
       Curly_Hair_1145: -871570475
       Curly_Hair_2626: -866636420
       Curly_Hair_1332: -1937315729
-      Curly_Hair_1999: 73243227
       Curly_Hair_2969: 1766930396
+      Curly_Hair_1999: 73243227
       Curly_Hair_530: -1087983986
       Curly_Hair_3056: -1956488889
       Curly_Hair_2224: -847850819
@@ -64846,11 +64858,11 @@ TextureImporter:
       Curly_Hair_2146: 249650619
       Curly_Hair_2866: -2056241136
       Curly_Hair_414: 1820690127
-      Curly_Hair_1468: 1993313866
       Curly_Hair_2766: -81228473
+      Curly_Hair_2830: 281943643
       Curly_Hair_2531: 1063603700
       Curly_Hair_2971: 1846811286
-      Curly_Hair_2830: 281943643
+      Curly_Hair_1468: 1993313866
       Curly_Hair_62: 647128177
       Curly_Hair_623: -798281815
       Curly_Hair_144: 119183611
@@ -64866,10 +64878,10 @@ TextureImporter:
       Curly_Hair_447: -1124561265
       Curly_Hair_1031: -1711835130
       Curly_Hair_718: -576184746
-      Curly_Hair_1473: 632269032
       Curly_Hair_1753: -2059977411
-      Curly_Hair_1199: 1464385980
+      Curly_Hair_1473: 632269032
       Curly_Hair_2896: -1152540913
+      Curly_Hair_1199: 1464385980
       Curly_Hair_2347: -206736071
       Curly_Hair_1614: -1288838796
       Curly_Hair_2970: 740839912
@@ -64898,9 +64910,9 @@ TextureImporter:
       Curly_Hair_1539: -1695603303
       Curly_Hair_1942: -191151412
       Curly_Hair_45: 1572512932
-      Curly_Hair_2295: 1624058797
       Curly_Hair_2070: 2046806607
       Curly_Hair_1249: -430620195
+      Curly_Hair_2295: 1624058797
       Curly_Hair_1068: -61804078
       Curly_Hair_2945: 1931929767
       Curly_Hair_2722: -1496367553
@@ -64935,10 +64947,10 @@ TextureImporter:
       Curly_Hair_142: 1614239063
       Curly_Hair_1452: 1980177512
       Curly_Hair_1333: 513729556
-      Curly_Hair_1632: -146731189
       Curly_Hair_2860: 1000941827
       Curly_Hair_2483: 1282000878
       Curly_Hair_1905: -1650564516
+      Curly_Hair_1632: -146731189
       Curly_Hair_1342: -1347931978
       Curly_Hair_1752: 72829765
       Curly_Hair_1381: 56778249
@@ -64995,8 +65007,8 @@ TextureImporter:
       Curly_Hair_186: 1385582323
       Curly_Hair_1482: -1913252691
       Curly_Hair_2045: -1476933557
-      Curly_Hair_2319: -133868888
       Curly_Hair_2369: -327970714
+      Curly_Hair_2319: -133868888
       Curly_Hair_190: 1496294657
       Curly_Hair_1339: -687910275
       Curly_Hair_8: -1438641264
@@ -65186,16 +65198,16 @@ TextureImporter:
       Curly_Hair_2871: -1470881913
       Curly_Hair_621: 1200786533
       Curly_Hair_1079: 2001160080
-      Curly_Hair_23: -849273571
       Curly_Hair_3051: -2137647759
+      Curly_Hair_23: -849273571
       Curly_Hair_1057: -910434533
       Curly_Hair_691: 259626685
       Curly_Hair_2917: 1704767741
       Curly_Hair_261: 107560727
       Curly_Hair_1629: 387051523
       Curly_Hair_937: 1077688643
-      Curly_Hair_2069: -1170367352
       Curly_Hair_1771: -555641065
+      Curly_Hair_2069: -1170367352
       Curly_Hair_2709: -1709085963
       Curly_Hair_211: 339118858
       Curly_Hair_290: -1355146161
@@ -65203,11 +65215,11 @@ TextureImporter:
       Curly_Hair_2426: -58508373
       Curly_Hair_2719: 1100111066
       Curly_Hair_578: -241708339
-      Curly_Hair_2029: 1887482793
+      Curly_Hair_2142: 1386204920
       Curly_Hair_58: -792067733
+      Curly_Hair_2029: 1887482793
       Curly_Hair_1043: -414052681
       Curly_Hair_2095: 1998207484
-      Curly_Hair_2142: 1386204920
       Curly_Hair_2697: -1661713755
       Curly_Hair_1232: 1150621082
       Curly_Hair_2715: -729576699
@@ -65322,8 +65334,8 @@ TextureImporter:
       Curly_Hair_2560: -1276857953
       Curly_Hair_378: -1221297342
       Curly_Hair_1415: -245097323
-      Curly_Hair_1976: -667580714
       Curly_Hair_2922: -2046062507
+      Curly_Hair_1976: -667580714
       Curly_Hair_1153: 1903299784
       Curly_Hair_2796: -1779375768
       Curly_Hair_1530: -1159034065
@@ -65382,11 +65394,11 @@ TextureImporter:
       Curly_Hair_2772: 774558628
       Curly_Hair_475: -1053479082
       Curly_Hair_517: -2080822957
-      Curly_Hair_712: 657593400
       Curly_Hair_2028: -813147721
-      Curly_Hair_2874: 248273857
       Curly_Hair_2753: -935964370
+      Curly_Hair_712: 657593400
       Curly_Hair_2793: -332963203
+      Curly_Hair_2874: 248273857
       Curly_Hair_1555: -403339634
       Curly_Hair_1734: -199605662
       Curly_Hair_1803: 1740711505
@@ -65485,8 +65497,8 @@ TextureImporter:
       Curly_Hair_2501: -1267600886
       Curly_Hair_1908: 1639401870
       Curly_Hair_411: 778911379
-      Curly_Hair_670: -636849065
       Curly_Hair_1656: 1087087739
+      Curly_Hair_670: -636849065
       Curly_Hair_194: -559214173
       Curly_Hair_713: -802917251
       Curly_Hair_2690: -627457271
@@ -65580,15 +65592,15 @@ TextureImporter:
       Curly_Hair_2064: -1911217944
       Curly_Hair_170: 982489469
       Curly_Hair_988: 909990720
-      Curly_Hair_2384: 1679555269
+      Curly_Hair_2988: 804506316
       Curly_Hair_2082: 454445685
+      Curly_Hair_2384: 1679555269
       Curly_Hair_883: 50187209
       Curly_Hair_2174: 29010378
-      Curly_Hair_2988: 804506316
       Curly_Hair_704: 1874017086
       Curly_Hair_692: -804102586
-      Curly_Hair_1298: 1012640638
       Curly_Hair_2986: -1604219415
+      Curly_Hair_1298: 1012640638
       Curly_Hair_2664: -661771267
       Curly_Hair_2725: -8770943
       Curly_Hair_1562: 2017641954
@@ -65597,8 +65609,8 @@ TextureImporter:
       Curly_Hair_331: -1890647937
       Curly_Hair_556: -910011151
       Curly_Hair_609: 457840578
-      Curly_Hair_1106: 1513396682
       Curly_Hair_1868: -791397228
+      Curly_Hair_1106: 1513396682
       Curly_Hair_914: -426344853
       Curly_Hair_1492: 346460515
       Curly_Hair_2300: 1511650012
@@ -65648,12 +65660,12 @@ TextureImporter:
       Curly_Hair_462: 19942367
       Curly_Hair_543: -176908928
       Curly_Hair_371: 916838323
+      Curly_Hair_1874: -706332562
       Curly_Hair_2633: 471896529
       Curly_Hair_17: 1360844986
       Curly_Hair_2143: 1286955078
       Curly_Hair_783: 297732921
       Curly_Hair_816: 2103907354
-      Curly_Hair_1874: -706332562
       Curly_Hair_948: -834548144
       Curly_Hair_2006: -1533729932
       Curly_Hair_1178: 162389852
@@ -65874,8 +65886,8 @@ TextureImporter:
       Curly_Hair_690: -1936322364
       Curly_Hair_2631: -343996059
       Curly_Hair_856: 1953538396
-      Curly_Hair_1669: 1402258987
       Curly_Hair_2717: 719489621
+      Curly_Hair_1669: 1402258987
       Curly_Hair_695: -692226512
       Curly_Hair_785: -2076381403
       Curly_Hair_1008: -377435216
@@ -66189,8 +66201,8 @@ TextureImporter:
       Curly_Hair_1459: 1334629323
       Curly_Hair_1262: 552229666
       Curly_Hair_640: -1665892541
-      Curly_Hair_1003: 275079694
       Curly_Hair_2169: -1893535961
+      Curly_Hair_1003: 275079694
       Curly_Hair_2199: 1656020746
       Curly_Hair_1848: -1515053502
       Curly_Hair_2435: -1551647058
@@ -66259,16 +66271,16 @@ TextureImporter:
       Curly_Hair_1628: -1054056279
       Curly_Hair_2232: -399288139
       Curly_Hair_568: 273772806
-      Curly_Hair_1034: -1006497267
-      Curly_Hair_895: -516565314
-      Curly_Hair_1620: 1091086638
       Curly_Hair_2819: -1383832591
+      Curly_Hair_895: -516565314
       Curly_Hair_2915: -1232867340
-      Curly_Hair_2223: -752844551
       Curly_Hair_2946: 1152266001
+      Curly_Hair_1034: -1006497267
+      Curly_Hair_2223: -752844551
+      Curly_Hair_1620: 1091086638
       Curly_Hair_176: -1350802299
-      Curly_Hair_794: 1436179806
       Curly_Hair_1404: -266681580
+      Curly_Hair_794: 1436179806
       Curly_Hair_2213: 453007214
       Curly_Hair_2681: 1617688047
       Curly_Hair_197: -800611670
@@ -66310,11 +66322,11 @@ TextureImporter:
       Curly_Hair_2550: 1171663637
       Curly_Hair_1020: -1148231745
       Curly_Hair_1921: 1712280608
-      Curly_Hair_2668: 1242832132
-      Curly_Hair_1787: -153606911
       Curly_Hair_2212: 635745382
-      Curly_Hair_2862: 2122683012
+      Curly_Hair_1787: -153606911
+      Curly_Hair_2668: 1242832132
       Curly_Hair_2883: -2088229136
+      Curly_Hair_2862: 2122683012
       Curly_Hair_115: 1205454808
       Curly_Hair_2468: 399372687
       Curly_Hair_1503: 1185515216
@@ -66399,18 +66411,19 @@ TextureImporter:
       Curly_Hair_2895: -1151175445
       Curly_Hair_1436: -1191091320
       Curly_Hair_1247: 938651125
-      Curly_Hair_1391: -907308700
       Curly_Hair_2247: -1325066724
+      Curly_Hair_1391: -907308700
       Curly_Hair_1662: -2033509424
       Curly_Hair_1891: 1740488871
       Curly_Hair_1431: -1181135833
       Curly_Hair_587: -1935155578
-      Curly_Hair_731: -745014136
       Curly_Hair_917: -276208096
+      Curly_Hair_731: -745014136
+      Curly_Hair_1780: 595516235
       Curly_Hair_843: 347661048
       Curly_Hair_2980: -2146518692
-      Curly_Hair_1780: 595516235
       Curly_Hair_2444: 775331703
+      Curly_Hair_2773: -2088463480
       Curly_Hair_312: -1412923355
       Curly_Hair_851: -138239966
       Curly_Hair_1024: -1885526061
@@ -66420,7 +66433,6 @@ TextureImporter:
       Curly_Hair_2440: -1370312030
       Curly_Hair_1761: 1563973790
       Curly_Hair_1007: -1325792468
-      Curly_Hair_2773: -2088463480
       Curly_Hair_338: -1182798879
       Curly_Hair_109: -1437737054
       Curly_Hair_970: 2054851826
@@ -66473,8 +66485,8 @@ TextureImporter:
       Curly_Hair_93: 388758820
       Curly_Hair_767: -1677811199
       Curly_Hair_381: -1831601238
-      Curly_Hair_2036: -13463071
       Curly_Hair_2782: -2002759041
+      Curly_Hair_2036: -13463071
       Curly_Hair_790: 1104140195
       Curly_Hair_2978: 1735413830
       Curly_Hair_2973: -2022474287
@@ -66511,16 +66523,16 @@ TextureImporter:
       Curly_Hair_464: -1858693722
       Curly_Hair_3042: 1833897287
       Curly_Hair_537: 1429275293
-      Curly_Hair_1072: -1159746439
       Curly_Hair_1413: 411300494
-      Curly_Hair_1505: -794086717
+      Curly_Hair_1072: -1159746439
       Curly_Hair_2417: 248129940
       Curly_Hair_1737: 1425491816
-      Curly_Hair_2729: -1053895903
+      Curly_Hair_1505: -794086717
       Curly_Hair_751: 883327964
       Curly_Hair_1618: -1674040808
       Curly_Hair_2538: 1578442325
       Curly_Hair_2914: 1392369504
+      Curly_Hair_2729: -1053895903
       Curly_Hair_1972: -426539798
       Curly_Hair_2017: 98184024
       Curly_Hair_284: -141533834
@@ -66599,10 +66611,10 @@ TextureImporter:
       Curly_Hair_472: 11843531
       Curly_Hair_913: 1594029944
       Curly_Hair_1182: 713574968
-      Curly_Hair_533: -882212760
-      Curly_Hair_1843: 959589575
       Curly_Hair_1637: -268720710
+      Curly_Hair_1843: 959589575
       Curly_Hair_1766: -588231537
+      Curly_Hair_533: -882212760
       Curly_Hair_18: 1658459357
       Curly_Hair_117: -984742691
       Curly_Hair_388: -555464550
@@ -66660,8 +66672,8 @@ TextureImporter:
       Curly_Hair_3030: 1477573272
       Curly_Hair_353: 818675195
       Curly_Hair_784: -1367719310
-      Curly_Hair_1879: 1951009641
       Curly_Hair_933: -1221239524
+      Curly_Hair_1879: 1951009641
       Curly_Hair_2515: -1515885282
       Curly_Hair_2043: 2139357229
       Curly_Hair_204: 442283114
@@ -66756,9 +66768,9 @@ TextureImporter:
       Curly_Hair_1825: -259423284
       Curly_Hair_2889: 1666868561
       Curly_Hair_2305: -1039662699
+      Curly_Hair_2475: 2129843190
       Curly_Hair_2175: 350341023
       Curly_Hair_929: -76906940
-      Curly_Hair_2475: 2129843190
       Curly_Hair_1362: -473805945
       Curly_Hair_1227: 1713597429
       Curly_Hair_112: 621865983
@@ -66781,10 +66793,10 @@ TextureImporter:
       Curly_Hair_340: -1234084307
       Curly_Hair_2880: 1505262406
       Curly_Hair_698: -1659922749
-      Curly_Hair_1027: -150202061
       Curly_Hair_1710: -278114701
-      Curly_Hair_1398: -863511747
+      Curly_Hair_1027: -150202061
       Curly_Hair_1483: -1322350638
+      Curly_Hair_1398: -863511747
       Curly_Hair_1245: 1889612397
       Curly_Hair_1926: -1542225311
       Curly_Hair_2033: -1887890153
@@ -66868,8 +66880,8 @@ TextureImporter:
       Curly_Hair_413: -581958534
       Curly_Hair_2068: 1243133896
       Curly_Hair_292: 1801848284
-      Curly_Hair_782: -927836537
       Curly_Hair_2268: 206016411
+      Curly_Hair_782: -927836537
       Curly_Hair_1748: -1107244764
       Curly_Hair_1127: 1593017725
       Curly_Hair_1516: -1679011187
@@ -66897,8 +66909,8 @@ TextureImporter:
       Curly_Hair_804: -423125823
       Curly_Hair_1711: 1167921241
       Curly_Hair_1077: 2081402728
-      Curly_Hair_1273: -548871058
       Curly_Hair_1275: -1400757677
+      Curly_Hair_1273: -548871058
       Curly_Hair_502: 1318871472
       Curly_Hair_982: -2100340343
       Curly_Hair_1980: -1259028223
@@ -66932,8 +66944,8 @@ TextureImporter:
       Curly_Hair_1130: -1432498623
       Curly_Hair_1697: -711410506
       Curly_Hair_848: -568241205
-      Curly_Hair_2052: -220367302
       Curly_Hair_1281: -93262424
+      Curly_Hair_2052: -220367302
       Curly_Hair_311: -951587959
       Curly_Hair_2728: 539106312
       Curly_Hair_253: 1764345975
@@ -67024,9 +67036,9 @@ TextureImporter:
       Curly_Hair_113: -895156250
       Curly_Hair_1012: 777841044
       Curly_Hair_121: 1270098733
-      Curly_Hair_1103: 1068418998
       Curly_Hair_1689: 1239316044
       Curly_Hair_2493: -729043687
+      Curly_Hair_1103: 1068418998
       Curly_Hair_1358: -404105701
       Curly_Hair_1497: 154809690
       Curly_Hair_2734: -1806103558

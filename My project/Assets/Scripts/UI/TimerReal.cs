@@ -5,6 +5,8 @@ using TMPro;
 
 public class TimerReal : MonoBehaviour
 {
+    public int minutosIniciales;
+    public int segundosIniciales;
     public int minutosActuales;
     public int segundosActuales;
     [SerializeField] int min;
@@ -15,6 +17,13 @@ public class TimerReal : MonoBehaviour
     private void Awake() 
     {
         restante = (min * 60) + sec;
+        
+        int secTemp= Mathf.FloorToInt(restante % 60);
+        int minTemp= Mathf.FloorToInt(restante/60);
+        minutosIniciales = segundosActuales = minTemp;
+        segundosIniciales = minutosActuales = secTemp;
+
+        
     }
 
     // Update is called once per frame
@@ -36,4 +45,5 @@ public class TimerReal : MonoBehaviour
 
         }
     }
+    
 }

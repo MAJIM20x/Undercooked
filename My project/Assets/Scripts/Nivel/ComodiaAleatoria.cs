@@ -31,20 +31,36 @@ public class ComodiaAleatoria : MonoBehaviour
         }
     }
     private void Update() {
+        if(isInside== true)
+        {
         prefabCanvas[contador].SetActive(true);
-         if(Input.GetKeyDown(KeyCode.Q))
+                if(Input.GetKeyDown(KeyCode.Q))
+                {
+                    prefabCanvas[contador].SetActive(false);
+                    contador++;
+                    if(contador ==prefabCanvas.Length)
+                    {
+                        contador = 0;
+                    }
+                    
+                    
+                }
+                if(Input.GetKeyDown(KeyCode.P))
+                {
+                    comida = Instantiate(prefab[contador],new Vector3(posicionGeneradorComida.position.x,posicionGeneradorComida.position.y,0),Quaternion.identity);
+                    comida.SetActive(true);
+                    comida.tag = "Items";
+                    comida.layer = contador;
+
+                }
+        }
+        else
         {
             prefabCanvas[contador].SetActive(false);
-            contador++;
         }
-        if(Input.GetKeyDown(KeyCode.P))
-        {
-            comida = Instantiate(prefab[contador],new Vector3(posicionGeneradorComida.position.x,posicionGeneradorComida.position.y,0),Quaternion.identity);
-            comida.tag = "Comida";
-            comida.layer = contador;
-
-        }
+                
     }
+    
     
 
 }

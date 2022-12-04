@@ -45,6 +45,7 @@ public class EntregaDePlato : MonoBehaviour
                 generadorDePlatos.cont--;
                 
                 
+                
             } 
     }
 }

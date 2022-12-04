@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 8
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -64450,15 +64450,24 @@ TextureImporter:
       Curly_Hair_221: -240831677
       Curly_Hair_2374: 422540569
       Curly_Hair_2478: 266704779
+<<<<<<< Updated upstream
       Curly_Hair_393: -172903096
       Curly_Hair_837: 1498057973
       Curly_Hair_1922: 964442226
       Curly_Hair_2941: 804610678
       Curly_Hair_1964: -1620412164
       Curly_Hair_2011: -1006306675
+=======
+      Curly_Hair_2011: -1006306675
+      Curly_Hair_837: 1498057973
+      Curly_Hair_393: -172903096
+      Curly_Hair_2941: 804610678
+      Curly_Hair_1922: 964442226
+>>>>>>> Stashed changes
       Curly_Hair_2176: 1836656635
       Curly_Hair_2688: 1021788800
       Curly_Hair_2704: 1975012141
+      Curly_Hair_1964: -1620412164
       Curly_Hair_1211: 1797981961
       Curly_Hair_1005: -1065020485
       Curly_Hair_2943: -1263447735

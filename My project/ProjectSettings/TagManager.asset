@@ -4,30 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Player1
-  - Player2
-  - Player3
-  - Player4
   - Items
-  - Plato
   - Holder
-  - Level1
-  - MainMenu
-  - Comida
-  - Tomate
-  - Pollo
-  - Lechuga
-  - Carne
-  - Pan
-  - Pescado
-  - Papa
-  - Palta
-  - Arroz
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - plato
+  - 
   - Water
   - UI
   - 
@@ -61,47 +44,26 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Piso
-    uniqueID: 2078542271
+    uniqueID: 4230929519
     locked: 0
-  - name: PisoEx
-    uniqueID: 3914295409
+  - name: Cocina
+    uniqueID: 2152534717
     locked: 0
   - name: Paredes
-    uniqueID: 304989855
+    uniqueID: 289370437
     locked: 0
-  - name: DetalleTecho
-    uniqueID: 1825732517
+  - name: Techo Bordes
+    uniqueID: 2892584887
     locked: 0
-  - name: DetalleTecho2
-    uniqueID: 577928075
+  - name: Techo F
+    uniqueID: 23066065
     locked: 0
-  - name: DetalleTecho3
-    uniqueID: 750239273
+  - name: CocinaInteractiva
+    uniqueID: 1254716369
     locked: 0
-  - name: DetalleTecho4
-    uniqueID: 3998340807
+  - name: Jugadores
+    uniqueID: 1937424785
     locked: 0
-  - name: PisoExterior
-    uniqueID: 2268217293
-    locked: 0
-  - name: DecoracionInterior
-    uniqueID: 3018136789
-    locked: 0
-  - name: DecoracionExterior
-    uniqueID: 2097445693
-    locked: 0
-  - name: DetallesPuerta
-    uniqueID: 3050000035
-    locked: 0
-  - name: Puerta
-    uniqueID: 828737801
-    locked: 0
-  - name: 'Mueble '
-    uniqueID: 1675481091
-    locked: 0
-  - name: Plato
-    uniqueID: 2935217077
-    locked: 0
-  - name: jugador
-    uniqueID: 4127319807
+  - name: Platos
+    uniqueID: 2767898629
     locked: 0

@@ -4082,8 +4082,8 @@ TextureImporter:
       outline: []
       physicsShape:
       - - {x: -8, y: 8}
-        - {x: -8, y: -1}
-        - {x: 8, y: -1}
+        - {x: -8, y: 0}
+        - {x: 8, y: 0}
         - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
@@ -4132,8 +4132,8 @@ TextureImporter:
       outline: []
       physicsShape:
       - - {x: -8, y: 8}
-        - {x: -8, y: -1}
-        - {x: 8, y: -1}
+        - {x: -8, y: 0}
+        - {x: 8, y: 0}
         - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
@@ -4157,8 +4157,8 @@ TextureImporter:
       outline: []
       physicsShape:
       - - {x: -8, y: 8}
-        - {x: -8, y: -1}
-        - {x: 8, y: -1}
+        - {x: -8, y: 0}
+        - {x: 8, y: 0}
         - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
@@ -4182,8 +4182,8 @@ TextureImporter:
       outline: []
       physicsShape:
       - - {x: -8, y: 8}
-        - {x: -8, y: -1}
-        - {x: 8, y: -1}
+        - {x: -8, y: 0}
+        - {x: 8, y: 0}
         - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
@@ -4207,8 +4207,8 @@ TextureImporter:
       outline: []
       physicsShape:
       - - {x: -8, y: 8}
-        - {x: -8, y: -1}
-        - {x: 8, y: -1}
+        - {x: -8, y: 0}
+        - {x: 8, y: 0}
         - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
@@ -4232,8 +4232,8 @@ TextureImporter:
       outline: []
       physicsShape:
       - - {x: -8, y: 8}
-        - {x: -8, y: -1}
-        - {x: 7, y: -1}
+        - {x: -8, y: 0}
+        - {x: 7, y: 0}
         - {x: 7, y: 8}
       tessellationDetail: 0
       bones: []
@@ -4257,8 +4257,8 @@ TextureImporter:
       outline: []
       physicsShape:
       - - {x: -8, y: 8}
-        - {x: -8, y: -1}
-        - {x: 8, y: -1}
+        - {x: -8, y: 0}
+        - {x: 8, y: 0}
         - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
@@ -4282,8 +4282,8 @@ TextureImporter:
       outline: []
       physicsShape:
       - - {x: -4, y: 8}
-        - {x: -4, y: -1}
-        - {x: 8, y: -1}
+        - {x: -4, y: 0}
+        - {x: 8, y: 0}
         - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
@@ -4306,10 +4306,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 4, y: -1}
+      - - {x: 4, y: 0}
         - {x: 4, y: 8}
         - {x: -8, y: 8}
-        - {x: -8, y: -1}
+        - {x: -8, y: 0}
       tessellationDetail: 0
       bones: []
       spriteID: 2173d8c64e9e79b45b27ef508863f335
@@ -13750,6 +13750,7 @@ TextureImporter:
       Cocina_606: -1897470816
       Cocina_524: -1206089754
       Cocina_254: 1111874520
+      Cocina_333: -769478776
       Cocina_136: 1946684015
       Cocina_243: 1396248562
       Cocina_36: -1336207516
@@ -13778,7 +13779,6 @@ TextureImporter:
       Cocina_620: -1169415773
       Cocina_147: 909497683
       Cocina_192: -1000833362
-      Cocina_198: 71855960
       Cocina_332: 2043832055
       Cocina_457: -594993222
       Cocina_555: -128082367
@@ -13901,12 +13901,12 @@ TextureImporter:
       Cocina_476: 2035060461
       Cocina_247: 1988450533
       Cocina_258: 751085831
-      Cocina_490: -204197871
       Cocina_229: 317246338
       Cocina_483: 1752985831
       Cocina_325: 214758704
       Cocina_363: 2039902935
       Cocina_368: -885627386
+      Cocina_490: -204197871
       Cocina_22: -1655972965
       Cocina_358: 20876547
       Cocina_351: -671725203
@@ -14069,12 +14069,12 @@ TextureImporter:
       Cocina_450: -269120305
       Cocina_278: 1802219613
       Cocina_48: -400283156
-      Cocina_587: -2076412383
-      Cocina_639: -1405237336
-      Cocina_496: 363895254
       Cocina_195: -811841452
-      Cocina_461: 662829113
+      Cocina_587: -2076412383
       Cocina_153: -853359352
+      Cocina_496: 363895254
+      Cocina_461: 662829113
+      Cocina_639: -1405237336
       Cocina_188: -1514287500
       Cocina_213: -2047344617
       Cocina_279: 78029043
@@ -14379,8 +14379,8 @@ TextureImporter:
       Cocina_217: -1228237686
       Cocina_120: 931071996
       Cocina_112: 318630979
+      Cocina_198: 71855960
       Cocina_75: -1880756398
-      Cocina_333: -769478776
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

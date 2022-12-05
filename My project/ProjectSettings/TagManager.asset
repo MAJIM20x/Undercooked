@@ -52,12 +52,6 @@ TagManager:
   - name: Paredes
     uniqueID: 289370437
     locked: 0
-  - name: Techo Bordes
-    uniqueID: 2892584887
-    locked: 0
-  - name: Techo F
-    uniqueID: 23066065
-    locked: 0
   - name: CocinaInteractiva
     uniqueID: 1254716369
     locked: 0
@@ -66,4 +60,10 @@ TagManager:
     locked: 0
   - name: Platos
     uniqueID: 2767898629
+    locked: 0
+  - name: Techo Bordes
+    uniqueID: 2892584887
+    locked: 0
+  - name: Techo F
+    uniqueID: 23066065
     locked: 0

@@ -9,18 +9,38 @@ public class Freir : MonoBehaviour
     public TimerReal timerReal;
     private GameObject vacio;
     private int tiempoFreir;
+    private GameObject polloGuardado;
+    private GameObject carneGuardado;
+    private GameObject papaGuardado;    
     public Rigidbody2D rb;
+    public Rigidbody2D polloRb;
+    public Rigidbody2D carneRb;
+    public Rigidbody2D papaRb;
     public PolloScripts pollo;
     public PapaScripts papa;
     public CarneScripts carne;
+
+
     //Metodo que verifica si esta en la zona 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.CompareTag("Player") )
+        if(other.gameObject.CompareTag("Player")  )
         {
-            
+            if(other.gameObject.layer== 6)
+            {
+                polloGuardado = other.gameObject;
+            }
+            else if(other.gameObject.layer == 8)
+            {
+                print("holauwu");
+                carneGuardado = other.gameObject;
+            }
+            else if(other.gameObject.layer == 26)
+            {
+                papaGuardado = other.gameObject;
+            }
             isInside= true;
-            print("HOLAmUNDO");
+            print("PintamosTodaLaCasa");
             
         }
         
@@ -31,7 +51,7 @@ public class Freir : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             isInside = false;
-            print("cHAOmUNDO");
+            print("SinDejarCaerUnaGotaDeQueEsEsoo");
         }
     }
     private void Update() {
@@ -43,161 +63,289 @@ public class Freir : MonoBehaviour
             {
                 print("helloWort");
                 tiempoFreir = timerReal.segundosActuales -5; 
-                pollo.desaparecer();
-                while(true)
+                if(polloGuardado !=null)
+                {
+                    pollo.desaparecer();
+                }
+                else if(carneGuardado != null)
+                {
+                    print("holauwu");
+                    carne.desaparecer();
+                }
+                else if(papaGuardado != null)
+                {
+                    papa.desaparecer();
+                }
+                /*while(true)
                 {
                     if(timerReal.segundosActuales == tiempoFreir)
                     {
-                        print("Arreglao");
-                        ;
-                        if(ComidaAleatoria.comida.layer == 6)
+                        if(polloGuardado !=null)
                         {
-                            ComidaAleatoria.comida.layer = 22;
+                            print("Arreglao");
+                            pollo.aparecer();
+                            if(ComidaAleatoria.comida.layer == 6)
+                            {
+                                ComidaAleatoria.comida.layer = 22;
+                            }
                         }
-                        else if(ComidaAleatoria.comida.layer ==8)
+                        else if(carneGuardado != null)
                         {
-                            ComidaAleatoria.comida.layer = 18;
-                            break;
+                            carne.aparecer();
+                            if(ComidaAleatoria.comida.layer ==8)
+                            {
+                                ComidaAleatoria.comida.layer = 18;
+                                break;
+                            }
                         }
-                        else if(ComidaAleatoria.comida.layer == 25)
+                        else if(papaGuardado !=null)
                         {
-                            ComidaAleatoria.comida.layer=19;
-                            break;
+                            if(ComidaAleatoria.comida.layer == 25)
+                            {
+                                ComidaAleatoria.comida.layer=19;
+                                break;
+                            }
                         }
-                        
-
                     }
-                }
+                }*/
                 
             }
             else if(timerReal.segundosActuales == 4&& timerReal.minutosActuales >0)
             {
                 tiempoFreir = 59;
-                ComidaAleatoria.comida.SetActive(false);
+                if(polloGuardado !=null)
+                {
+                    pollo.desaparecer();
+                }
+                else if(carneGuardado != null)
+                {
+                    carne.desaparecer();
+                }
+                else if(papaGuardado != null)
+                {
+                    papa.desaparecer();
+                }
                 while(true)
                 {
                     if(timerReal.segundosActuales == tiempoFreir)
                     {
-                        ComidaAleatoria.comida.SetActive(true);
-                        if(ComidaAleatoria.comida.layer == 6)
+                        if(polloGuardado !=null)
                         {
-                            ComidaAleatoria.comida.layer = 22;
+                            print("Arreglao");
+                            pollo.aparecer();
+                            if(ComidaAleatoria.comida.layer == 6)
+                            {
+                                ComidaAleatoria.comida.layer = 22;
+                            }
                         }
-                        else if(ComidaAleatoria.comida.layer ==8)
+                        else if(carneGuardado != null)
                         {
-                            ComidaAleatoria.comida.layer = 18;
+                            carne.aparecer();
+                            if(ComidaAleatoria.comida.layer ==8)
+                            {
+                                ComidaAleatoria.comida.layer = 18;
+                                break;
+                            }
                         }
-                        else if(ComidaAleatoria.comida.layer == 25)
+                        else if(papaGuardado !=null)
                         {
-                            ComidaAleatoria.comida.layer=19;
+                            if(ComidaAleatoria.comida.layer == 25)
+                            {
+                                ComidaAleatoria.comida.layer=19;
+                                break;
+                            }
                         }
-                        break;
-
                     }
                 }
 
             }else if(timerReal.segundosActuales == 3&& timerReal.minutosActuales >0)
             {
                 tiempoFreir = 58;
-                ComidaAleatoria.comida.SetActive(false);
+                if(polloGuardado !=null)
+                {
+                    pollo.desaparecer();
+                }
+                else if(carneGuardado != null)
+                {
+                    carne.desaparecer();
+                }
+                else if(papaGuardado != null)
+                {
+                    papa.desaparecer();
+                }
                 while(true)
                 {
                     if(timerReal.segundosActuales == tiempoFreir)
                     {
-                        ComidaAleatoria.comida.SetActive(true);
-                        if(ComidaAleatoria.comida.layer == 6)
+                        if(polloGuardado !=null)
                         {
-                            ComidaAleatoria.comida.layer = 22;
+                            print("Arreglao");
+                            pollo.aparecer();
+                            if(ComidaAleatoria.comida.layer == 6)
+                            {
+                                ComidaAleatoria.comida.layer = 22;
+                            }
                         }
-                        else if(ComidaAleatoria.comida.layer ==8)
+                        else if(carneGuardado != null)
                         {
-                            ComidaAleatoria.comida.layer = 18;
+                            carne.aparecer();
+                            if(ComidaAleatoria.comida.layer ==8)
+                            {
+                                ComidaAleatoria.comida.layer = 18;
+                                break;
+                            }
                         }
-                        else if(ComidaAleatoria.comida.layer == 25)
+                        else if(papaGuardado !=null)
                         {
-                            ComidaAleatoria.comida.layer=19;
+                            if(ComidaAleatoria.comida.layer == 25)
+                            {
+                                ComidaAleatoria.comida.layer=19;
+                                break;
+                            }
                         }
-                        break;
-
                     }
                 }
             }else if(timerReal.segundosActuales == 2&& timerReal.minutosActuales >0)
             {
                 tiempoFreir = 57;
-                ComidaAleatoria.comida.SetActive(false);
+                if(polloGuardado !=null)
+                {
+                    pollo.desaparecer();
+                }
+                else if(carneGuardado != null)
+                {
+                    carne.desaparecer();
+                }
+                else if(papaGuardado != null)
+                {
+                    papa.desaparecer();
+                }
                 while(true)
                 {
                     if(timerReal.segundosActuales == tiempoFreir)
                     {
-                        ComidaAleatoria.comida.SetActive(true);
-                        if(ComidaAleatoria.comida.layer == 6)
+                        if(polloGuardado !=null)
                         {
-                            ComidaAleatoria.comida.layer = 22;
+                            print("Arreglao");
+                            pollo.aparecer();
+                            if(ComidaAleatoria.comida.layer == 6)
+                            {
+                                ComidaAleatoria.comida.layer = 22;
+                            }
                         }
-                        else if(ComidaAleatoria.comida.layer ==8)
+                        else if(carneGuardado != null)
                         {
-                            ComidaAleatoria.comida.layer = 18;
+                            carne.aparecer();
+                            if(ComidaAleatoria.comida.layer ==8)
+                            {
+                                ComidaAleatoria.comida.layer = 18;
+                                break;
+                            }
                         }
-                        else if(ComidaAleatoria.comida.layer == 25)
+                        else if(papaGuardado !=null)
                         {
-                            ComidaAleatoria.comida.layer=19;
+                            if(ComidaAleatoria.comida.layer == 25)
+                            {
+                                ComidaAleatoria.comida.layer=19;
+                                break;
+                            }
                         }
-                        break;
-
                     }
                 }
-            }else if(timerReal.segundosActuales == 1&& timerReal.minutosActuales >0)
+            }
+            else if(timerReal.segundosActuales == 1&& timerReal.minutosActuales >0)
             {
                 tiempoFreir = 56;
-                ComidaAleatoria.comida.SetActive(false);
+                if(polloGuardado !=null)
+                {
+                    pollo.desaparecer();
+                }
+                else if(carneGuardado != null)
+                {
+                    carne.desaparecer();
+                }
+                else if(papaGuardado != null)
+                {
+                    papa.desaparecer();
+                }
                 while(true)
                 {
                     if(timerReal.segundosActuales == tiempoFreir)
                     {
-                        ComidaAleatoria.comida.SetActive(true);
-                        if(ComidaAleatoria.comida.layer == 6)
+                        if(polloGuardado !=null)
                         {
-                            ComidaAleatoria.comida.layer = 22;
+                            print("Arreglao");
+                            pollo.aparecer();
+                            if(ComidaAleatoria.comida.layer == 6)
+                            {
+                                ComidaAleatoria.comida.layer = 22;
+                            }
                         }
-                        else if(ComidaAleatoria.comida.layer ==8)
+                        else if(carneGuardado != null)
                         {
-                            ComidaAleatoria.comida.layer = 18;
+                            carne.aparecer();
+                            if(ComidaAleatoria.comida.layer ==8)
+                            {
+                                ComidaAleatoria.comida.layer = 18;
+                                break;
+                            }
                         }
-                        else if(ComidaAleatoria.comida.layer == 25)
+                        else if(papaGuardado !=null)
                         {
-                            ComidaAleatoria.comida.layer=19;
+                            if(ComidaAleatoria.comida.layer == 25)
+                            {
+                                ComidaAleatoria.comida.layer=19;
+                                break;
+                            }
                         }
-                        break;
-
                     }
                 }
             
             }else if(timerReal.segundosActuales == 0&& timerReal.minutosActuales >0)
             {
                 tiempoFreir = 55;
-                ComidaAleatoria.comida.SetActive(false);
+                if(polloGuardado !=null)
+                {
+                    pollo.desaparecer();
+                }
+                else if(carneGuardado != null)
+                {
+                    carne.desaparecer();
+                }
+                else if(papaGuardado != null)
+                {
+                    papa.desaparecer();
+                }
                 while(true)
                 {
                     if(timerReal.segundosActuales == tiempoFreir)
                     {
-                        ComidaAleatoria.comida.SetActive(true);
-                        if(ComidaAleatoria.comida.layer == 6)
+                        if(polloGuardado !=null)
                         {
-                            ComidaAleatoria.comida.layer = 22;
-                            break;
+                            print("Arreglao");
+                            pollo.aparecer();
+                            if(ComidaAleatoria.comida.layer == 6)
+                            {
+                                ComidaAleatoria.comida.layer = 22;
+                            }
                         }
-                        else if(ComidaAleatoria.comida.layer ==8)
+                        else if(carneGuardado != null)
                         {
-                            ComidaAleatoria.comida.layer = 18;
-                            break;
+                            carne.aparecer();
+                            if(ComidaAleatoria.comida.layer ==8)
+                            {
+                                ComidaAleatoria.comida.layer = 18;
+                                break;
+                            }
                         }
-                        else if(ComidaAleatoria.comida.layer == 25)
+                        else if(papaGuardado !=null)
                         {
-                            ComidaAleatoria.comida.layer=19;
-                            break;
+                            if(ComidaAleatoria.comida.layer == 25)
+                            {
+                                ComidaAleatoria.comida.layer=19;
+                                break;
+                            }
                         }
-                        
-
                     }
                 }
            

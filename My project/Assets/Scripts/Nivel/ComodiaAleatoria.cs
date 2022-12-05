@@ -50,42 +50,39 @@ public class ComodiaAleatoria : MonoBehaviour
                     comida = Instantiate(prefab[contador],new Vector3(posicionGeneradorComida.position.x,posicionGeneradorComida.position.y,0),Quaternion.identity);
                     comida.SetActive(true);
                     comida.tag = "Items";
-                    if(contador == 0)
-                    {
-                        comida.layer = 12;
-                    }
-                    else if(contador == 1)
-                    {
-                        comida.layer = 8;
-                    }
-                    else if(contador == 2)
-                    {
-                        comida.layer = 7; 
-                    }
-                    else if(contador == 3)
-                    {
-                        comida.layer =3;
-                    }
-                    else if(contador == 4)
-                    {
-                        comida.layer = 9;
-                    }
-                    else if(contador == 5)
-                    {
-                        comida.layer =10;
-                    }
-                    else if (contador == 6)
-                    {
-                        comida.layer = 11;
-                    }
-                    else if(contador == 7)
-                    {
-                        comida.layer = 6;
-                    }
-                    else if(contador == 8)
+                    if(contador == 0)//tomate
                     {
                         comida.layer = 25;
                     }
+                    else if(contador == 1)//carne 
+                    {
+                        comida.layer = 8;
+                    }
+                    else if(contador == 2)//lechuga
+                    {
+                        comida.layer = 7; 
+                    }
+                    else if(contador == 3)//palta
+                    {
+                        comida.layer =3;
+                    }
+                    else if(contador == 4)//pan
+                    {
+                        comida.layer = 9;
+                    }
+                    else if(contador == 5)//papa
+                    {
+                        comida.layer =10;
+                    }
+                    else if (contador == 6)//pescado
+                    {
+                        comida.layer = 11;
+                    }
+                    else if(contador == 7)//pollo
+                    {
+                        comida.layer = 6;
+                    }
+                    
                     
 
                 }

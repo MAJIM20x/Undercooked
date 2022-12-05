@@ -17,7 +17,7 @@ public class GeneradorDePlatos : MonoBehaviour
     //Metodo que verifica si esta en la zona 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.CompareTag("Player1"))
+        if(other.gameObject.CompareTag("Player"))
         {
             
             isInside= true;
@@ -29,7 +29,7 @@ public class GeneradorDePlatos : MonoBehaviour
     //Metodo que verifica si ya salio de la zona
     public void OnTriggerExit2D(Collider2D other) 
     {
-        if(other.gameObject.CompareTag("Player1"))
+        if(other.gameObject.CompareTag("Player"))
         {
             isInside = false;
             print("cHAOmUNDO");

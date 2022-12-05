@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement; 
 
 public class MenuPausa : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class MenuPausa : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             if(GameIsPaused)
             {
@@ -32,7 +33,7 @@ public class MenuPausa : MonoBehaviour
 
     }
 
-
+    
     void Pause()
     {
         pauseMenuUI.SetActive(true);
@@ -52,5 +53,11 @@ public class MenuPausa : MonoBehaviour
     {
         Debug.Log("Quitting game...");
         Application.Quit();    
+    }
+
+
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }

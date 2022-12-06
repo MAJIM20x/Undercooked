@@ -5942,6 +5942,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34e7d93c1ca9a6141a6f2a61cacc280e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  musicaFondoAudio: {fileID: 321763779}
+  efectoSonidoAudio:
+  - {fileID: 531851299}
+  - {fileID: 256637563}
+  - {fileID: 507868382}
 --- !u!222 &958182093
 CanvasRenderer:
   m_ObjectHideFlags: 0

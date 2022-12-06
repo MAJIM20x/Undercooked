@@ -8,6 +8,7 @@ public class movimientoJugador : MonoBehaviour
     //Variables serializadas
     [SerializeField]private float walk = 3f;
     [SerializeField]private float run = 5f;
+    [SerializeField]private int playerIndex = 0;
     
     
     //Variables no serializadas
@@ -21,7 +22,7 @@ public class movimientoJugador : MonoBehaviour
     
     
     //Obtener componentes para los metodos
-    void Awake()
+    private void Awake()
     {
         playerRb = GetComponent<Rigidbody2D>();
         playerInput = GetComponent<PlayerInput>();
@@ -32,7 +33,7 @@ public class movimientoJugador : MonoBehaviour
     }
     
    
-    private void FixedUpdate()
+    void FixedUpdate()
     {
        
         
@@ -68,7 +69,11 @@ public class movimientoJugador : MonoBehaviour
         }
 
     }
-
+ 
+    public int GetPlayerIndex()
+    {
+        return playerIndex;
+    }
 
 
 }

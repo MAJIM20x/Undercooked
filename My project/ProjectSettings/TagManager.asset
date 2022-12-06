@@ -6,36 +6,40 @@ TagManager:
   tags:
   - Holder
   - Items
+  - New tag
+  - New tag (1)
+  - New tag (2)
+  - New tag (3)
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Palta
+  - palta
   - Water
   - UI
-  - Tomate
-  - Carne
-  - Lechuga
-  - Pan
-  - Papa
-  - Pescado
-  - Pollo
-  - Arroz
+  - tomate
+  - carne
+  - lechuga
+  - pan
+  - papa
+  - pescado
+  - pollo
+  - arroz
   - TomatePicado
-  - CarnePicada
-  - CarneFrita
-  - CarnePicadaFrita
-  - PapaPicada
-  - PapaFrita
+  - CarnePicado
+  - papaPicado
   - pescadoPicado
-  - PolloCocido
-  - PolloFrito
-  - ArrozCocido
-  - Ensalada
+  - CarneFrita
+  - PapaFrita
+  - popoFrito
+  - polloCocido
+  - ArrozcCocio
+  - ensalada
   - Hamburguesa
-  - PolloFrito
-  - PapasFritras
+  - PoLLITO
+  - pAPITAS
   - Sushi
+  - 
   - 
   - 
   - 
@@ -43,61 +47,36 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Piso
-<<<<<<< Updated upstream
-    uniqueID: 4230929519
-    locked: 0
-  - name: Paredes
-    uniqueID: 289370437
-    locked: 0
-  - name: Cocina
-    uniqueID: 2152534717
-    locked: 0
-  - name: CocinaInteractiva
-    uniqueID: 1254716369
-    locked: 0
-  - name: Jugadores
-    uniqueID: 1937424785
-    locked: 0
-  - name: Platos
-    uniqueID: 2767898629
-    locked: 0
-  - name: Decoracion Interior
-    uniqueID: 2676412559
-    locked: 0
-  - name: Techo Bordes
-    uniqueID: 2892584887
-    locked: 0
-  - name: Techo F
-    uniqueID: 23066065
-    locked: 0
-  - name: Sillas y  Mesas
-    uniqueID: 614082467
-    locked: 0
-  - name: Comida
-    uniqueID: 2807113963
-=======
-    uniqueID: 3976682451
+  - name: piso
+    uniqueID: 3156791853
     locked: 0
   - name: paredes
-    uniqueID: 2783886499
+    uniqueID: 2503335503
     locked: 0
-  - name: techobordes
-    uniqueID: 819330811
+  - name: techoBordes
+    uniqueID: 162665309
     locked: 0
-  - name: techoFondo
-    uniqueID: 114886691
+  - name: TechoFondo
+    uniqueID: 358671099
     locked: 0
   - name: Cocina
-    uniqueID: 2189121595
+    uniqueID: 1803362373
     locked: 0
-  - name: cocinaInteractiva
-    uniqueID: 2659256567
+  - name: CocinaInteractiva
+    uniqueID: 2353121307
     locked: 0
-  - name: ItemsHolders
-    uniqueID: 144017927
+  - name: ItemHOlder
+    uniqueID: 3506578851
     locked: 0
-  - name: Instrumentos
-    uniqueID: 2476227233
->>>>>>> Stashed changes
+  - name: PAREDaRREGL1
+    uniqueID: 3131234221
+    locked: 0
+  - name: pARREDaRREGLO2
+    uniqueID: 1603266315
+    locked: 0
+  - name: uten
+    uniqueID: 2649754415
+    locked: 0
+  - name: Jugadores
+    uniqueID: 2390455877
     locked: 0

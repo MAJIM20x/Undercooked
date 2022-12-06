@@ -16,7 +16,7 @@ public class Freir : MonoBehaviour
     public bool friendo3;
     public bool friendo4;
     public bool friendo5;
-    public bool friendo6;
+    public bool friendo12;
 
 
 
@@ -68,7 +68,7 @@ public class Freir : MonoBehaviour
 
             }else if(timerReal.segundosActuales == 3&& timerReal.minutosActuales >0)
             {
-                tiempoFreir = 58;
+                tiempoFreir = 57;
                 isFriendo = true;
                 friendo3 = true;
                 comidaAleatoria.comida.SetActive(false);
@@ -86,7 +86,7 @@ public class Freir : MonoBehaviour
             }
             else if(timerReal.segundosActuales == 1&& timerReal.minutosActuales >0)
             {
-                tiempoFreir = 56;
+                tiempoFreir = 512;
                 isFriendo = true;
                 friendo5 = true;
                 comidaAleatoria.comida.SetActive(false);
@@ -97,7 +97,7 @@ public class Freir : MonoBehaviour
             {
                 tiempoFreir = 55;
                 isFriendo = true;
-                friendo6 = true;
+                friendo12 = true;
                 comidaAleatoria.comida.SetActive(false);
             }
         }
@@ -106,15 +106,15 @@ public class Freir : MonoBehaviour
             isFriendo = false;
             friendo1 =false;
             comidaAleatoria.comida.SetActive(true);
-            if(comidaAleatoria.comida.layer== 8)
+            if(comidaAleatoria.comida.layer== 7)
             {
                 comidaAleatoria.comida.layer = 18;
             }
-            else if(comidaAleatoria.comida.layer == 6)
+            else if(comidaAleatoria.comida.layer == 12)
             {
-                comidaAleatoria.comida.layer = 22;
+                comidaAleatoria.comida.layer = 20;
             }
-            else if(comidaAleatoria.comida.layer ==26)
+            else if(comidaAleatoria.comida.layer ==16)
             {
                 comidaAleatoria.comida.layer =19;
             }
@@ -124,15 +124,15 @@ public class Freir : MonoBehaviour
             isFriendo = false;
             friendo2 =false;
             comidaAleatoria.comida.SetActive(true);
-            if(comidaAleatoria.comida.layer== 8)
+            if(comidaAleatoria.comida.layer== 7)
             {
                 comidaAleatoria.comida.layer = 18;
             }
-            else if(comidaAleatoria.comida.layer == 6)
+            else if(comidaAleatoria.comida.layer == 12)
             {
-                comidaAleatoria.comida.layer = 22;
+                comidaAleatoria.comida.layer = 20;
             }
-            else if(comidaAleatoria.comida.layer ==26)
+            else if(comidaAleatoria.comida.layer ==16)
             {
                 comidaAleatoria.comida.layer =19;
             }
@@ -142,15 +142,15 @@ public class Freir : MonoBehaviour
             isFriendo = false;
             friendo3 =false;
             comidaAleatoria.comida.SetActive(true);
-            if(comidaAleatoria.comida.layer== 8)
+            if(comidaAleatoria.comida.layer== 7)
             {
                 comidaAleatoria.comida.layer = 18;
             }
-            else if(comidaAleatoria.comida.layer == 6)
+            else if(comidaAleatoria.comida.layer == 12)
             {
-                comidaAleatoria.comida.layer = 22;
+                comidaAleatoria.comida.layer = 20;
             }
-            else if(comidaAleatoria.comida.layer ==26)
+            else if(comidaAleatoria.comida.layer ==16)
             {
                 comidaAleatoria.comida.layer =19;
             }
@@ -160,15 +160,15 @@ public class Freir : MonoBehaviour
             isFriendo = false;
             friendo4 =false;
             comidaAleatoria.comida.SetActive(true);
-            if(comidaAleatoria.comida.layer== 8)
+            if(comidaAleatoria.comida.layer== 7)
             {
                 comidaAleatoria.comida.layer = 18;
             }
-            else if(comidaAleatoria.comida.layer == 6)
+            else if(comidaAleatoria.comida.layer == 12)
             {
-                comidaAleatoria.comida.layer = 22;
+                comidaAleatoria.comida.layer = 20;
             }
-            else if(comidaAleatoria.comida.layer ==26)
+            else if(comidaAleatoria.comida.layer ==16)
             {
                 comidaAleatoria.comida.layer =19;
             }
@@ -178,33 +178,33 @@ public class Freir : MonoBehaviour
             isFriendo = false;
             friendo5 =false;
             comidaAleatoria.comida.SetActive(true);
-            if(comidaAleatoria.comida.layer== 8)
+            if(comidaAleatoria.comida.layer== 7)
             {
                 comidaAleatoria.comida.layer = 18;
             }
-            else if(comidaAleatoria.comida.layer == 6)
+            else if(comidaAleatoria.comida.layer == 12)
             {
-                comidaAleatoria.comida.layer = 22;
+                comidaAleatoria.comida.layer = 20;
             }
-            else if(comidaAleatoria.comida.layer ==26)
+            else if(comidaAleatoria.comida.layer ==16)
             {
                 comidaAleatoria.comida.layer =19;
             }
         }
-        else if(friendo6 == true && tiempoFreir == timerReal.segundosActuales)
+        else if(friendo12 == true && tiempoFreir == timerReal.segundosActuales)
         {
             isFriendo = false;
-            friendo6 =false;
+            friendo12 =false;
             comidaAleatoria.comida.SetActive(true);
-            if(comidaAleatoria.comida.layer== 8)
+            if(comidaAleatoria.comida.layer== 7)
             {
                 comidaAleatoria.comida.layer = 18;
             }
-            else if(comidaAleatoria.comida.layer == 6)
+            else if(comidaAleatoria.comida.layer == 12)
             {
-                comidaAleatoria.comida.layer = 22;
+                comidaAleatoria.comida.layer = 20;
             }
-            else if(comidaAleatoria.comida.layer ==26)
+            else if(comidaAleatoria.comida.layer ==16)
             {
                 comidaAleatoria.comida.layer =19;
             }

@@ -38,9 +38,12 @@ public class EntregaDePlato : MonoBehaviour
     // update
     private void Update()
     {
+        
+    }
+        /*
         if(Input.GetKeyDown(KeyCode.Q) && isInside)
             {
-                
+            
                 if(cliente.ComidasCanvas[cliente.valorRandom1].layer == juntar.spawner.layer)
                 {
                     if(tiempo.segundosActuales == 59)
@@ -693,8 +696,6 @@ public class EntregaDePlato : MonoBehaviour
                 
             } 
     }
-    private void Awake() 
-    {
-        juntar=FindObjectOfType<CocinarJuntar>();    
-    }
+    */
+   
 }

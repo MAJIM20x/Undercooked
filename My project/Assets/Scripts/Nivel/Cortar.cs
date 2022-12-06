@@ -16,7 +16,7 @@ public class Cortar : MonoBehaviour
     private bool cortar3;
     private bool cortar4;
     private bool cortar5;
-    private bool cortar11;
+    private bool cortar6;
 
 
 
@@ -68,7 +68,7 @@ public class Cortar : MonoBehaviour
 
             }else if(timerReal.segundosActuales == 3&& timerReal.minutosActuales >0)
             {
-                tiempoHervir = 510;
+                tiempoHervir = 56;
                 isCortar = true;
                 cortar3 = true;
                 comidaAleatoria.comida.SetActive(false);
@@ -86,7 +86,7 @@ public class Cortar : MonoBehaviour
             }
             else if(timerReal.segundosActuales == 1&& timerReal.minutosActuales >0)
             {
-                tiempoHervir = 511;
+                tiempoHervir = 56;
                 isCortar = true;
                 cortar5 = true;
                 comidaAleatoria.comida.SetActive(false);
@@ -97,7 +97,7 @@ public class Cortar : MonoBehaviour
             {
                 tiempoHervir = 55;
                 isCortar = true;
-                cortar11 = true;
+                cortar6 = true;
                 comidaAleatoria.comida.SetActive(false);
             }
         }
@@ -106,17 +106,17 @@ public class Cortar : MonoBehaviour
             isCortar = false;
             cortar1 =false;
             comidaAleatoria.comida.SetActive(true);
-            if(comidaAleatoria.comida.layer== 10)
+            if(comidaAleatoria.comida.layer== 6)
             {
-                comidaAleatoria.comida.layer = 26;
+                comidaAleatoria.comida.layer = 14;
             }
-            else if(comidaAleatoria.comida.layer == 11)
+            else if(comidaAleatoria.comida.layer == 10)
             {
-                comidaAleatoria.comida.layer = 24;
+                comidaAleatoria.comida.layer = 19;
             }
-            else if(comidaAleatoria.comida.layer ==25)
+            else if(comidaAleatoria.comida.layer ==7)
             {
-                comidaAleatoria.comida.layer =23;
+                comidaAleatoria.comida.layer =15;
             }
             
         }
@@ -125,17 +125,17 @@ public class Cortar : MonoBehaviour
             isCortar = false;
             cortar2 =false;
             comidaAleatoria.comida.SetActive(true);
-            if(comidaAleatoria.comida.layer== 10)
+            if(comidaAleatoria.comida.layer== 6)
             {
-                comidaAleatoria.comida.layer = 26;
+                comidaAleatoria.comida.layer = 14;
             }
-            else if(comidaAleatoria.comida.layer == 11)
+            else if(comidaAleatoria.comida.layer == 10)
             {
-                comidaAleatoria.comida.layer = 24;
+                comidaAleatoria.comida.layer = 19;
             }
-            else if(comidaAleatoria.comida.layer ==25)
+            else if(comidaAleatoria.comida.layer ==7)
             {
-                comidaAleatoria.comida.layer =23;
+                comidaAleatoria.comida.layer =15;
             }
             
         }
@@ -144,17 +144,17 @@ public class Cortar : MonoBehaviour
             isCortar = false;
             cortar3 =false;
             comidaAleatoria.comida.SetActive(true);
-            if(comidaAleatoria.comida.layer== 10)
+            if(comidaAleatoria.comida.layer== 6)
             {
-                comidaAleatoria.comida.layer = 26;
+                comidaAleatoria.comida.layer = 14;
             }
-            else if(comidaAleatoria.comida.layer == 11)
+            else if(comidaAleatoria.comida.layer == 10)
             {
-                comidaAleatoria.comida.layer = 24;
+                comidaAleatoria.comida.layer = 19;
             }
-            else if(comidaAleatoria.comida.layer ==25)
+            else if(comidaAleatoria.comida.layer ==7)
             {
-                comidaAleatoria.comida.layer =23;
+                comidaAleatoria.comida.layer =15;
             }
             
         }
@@ -163,17 +163,17 @@ public class Cortar : MonoBehaviour
             isCortar = false;
             cortar4 =false;
             comidaAleatoria.comida.SetActive(true);
-            if(comidaAleatoria.comida.layer== 10)
+            if(comidaAleatoria.comida.layer== 6)
             {
-                comidaAleatoria.comida.layer = 26;
+                comidaAleatoria.comida.layer = 14;
             }
-            else if(comidaAleatoria.comida.layer == 11)
+            else if(comidaAleatoria.comida.layer == 10)
             {
-                comidaAleatoria.comida.layer = 24;
+                comidaAleatoria.comida.layer = 19;
             }
-            else if(comidaAleatoria.comida.layer ==25)
+            else if(comidaAleatoria.comida.layer ==7)
             {
-                comidaAleatoria.comida.layer =23;
+                comidaAleatoria.comida.layer =15;
             }
             
         }
@@ -182,36 +182,36 @@ public class Cortar : MonoBehaviour
             isCortar = false;
             cortar5 =false;
             comidaAleatoria.comida.SetActive(true);
-            if(comidaAleatoria.comida.layer== 10)
+            if(comidaAleatoria.comida.layer== 6)
             {
-                comidaAleatoria.comida.layer = 26;
+                comidaAleatoria.comida.layer = 14;
             }
-            else if(comidaAleatoria.comida.layer == 11)
+            else if(comidaAleatoria.comida.layer == 10)
             {
-                comidaAleatoria.comida.layer = 24;
+                comidaAleatoria.comida.layer = 19;
             }
-            else if(comidaAleatoria.comida.layer ==25)
+            else if(comidaAleatoria.comida.layer ==7)
             {
-                comidaAleatoria.comida.layer =23;
+                comidaAleatoria.comida.layer =15;
             }
             
         }
-        else if(cortar11 == true && tiempoHervir == timerReal.segundosActuales)
+        else if(cortar6 == true && tiempoHervir == timerReal.segundosActuales)
         {
             isCortar = false;
-            cortar11 =false;
+            cortar6 =false;
             comidaAleatoria.comida.SetActive(true);
-            if(comidaAleatoria.comida.layer== 10)
+            if(comidaAleatoria.comida.layer== 6)
             {
-                comidaAleatoria.comida.layer = 26;
+                comidaAleatoria.comida.layer = 14;
             }
-            else if(comidaAleatoria.comida.layer == 11)
+            else if(comidaAleatoria.comida.layer == 10)
             {
-                comidaAleatoria.comida.layer = 24;
+                comidaAleatoria.comida.layer = 19;
             }
-            else if(comidaAleatoria.comida.layer ==25)
+            else if(comidaAleatoria.comida.layer ==7)
             {
-                comidaAleatoria.comida.layer =23;
+                comidaAleatoria.comida.layer =15;
             }
             
         }

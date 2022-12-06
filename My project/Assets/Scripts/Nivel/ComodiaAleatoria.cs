@@ -86,9 +86,6 @@ public class ComodiaAleatoria : MonoBehaviour
                     {
                         comida.layer =13;
                     }
-                    
-                    
-
                 }
         }
         else

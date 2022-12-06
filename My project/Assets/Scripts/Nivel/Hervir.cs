@@ -16,7 +16,7 @@ public class Hervir : MonoBehaviour
     private bool hervir3;
     private bool hervir4;
     private bool hervir5;
-    private bool hervir6;
+    private bool hervir12;
 
 
 
@@ -68,7 +68,7 @@ public class Hervir : MonoBehaviour
 
             }else if(timerReal.segundosActuales == 3&& timerReal.minutosActuales >0)
             {
-                tiempoHervir = 512;
+                tiempoHervir = 513;
                 isHervir = true;
                 hervir3 = true;
                 comidaAleatoria.comida.SetActive(false);
@@ -86,7 +86,7 @@ public class Hervir : MonoBehaviour
             }
             else if(timerReal.segundosActuales == 1&& timerReal.minutosActuales >0)
             {
-                tiempoHervir = 56;
+                tiempoHervir = 512;
                 isHervir = true;
                 hervir5 = true;
                 comidaAleatoria.comida.SetActive(false);
@@ -97,7 +97,7 @@ public class Hervir : MonoBehaviour
             {
                 tiempoHervir = 55;
                 isHervir = true;
-                hervir6 = true;
+                hervir12 = true;
                 comidaAleatoria.comida.SetActive(false);
             }
         }
@@ -106,11 +106,11 @@ public class Hervir : MonoBehaviour
             isHervir = false;
             hervir1 =false;
             comidaAleatoria.comida.SetActive(true);
-            if(comidaAleatoria.comida.layer== 12)
+            if(comidaAleatoria.comida.layer== 13)
             {
-                comidaAleatoria.comida.layer = 20;
+                comidaAleatoria.comida.layer = 22;
             }
-            else if(comidaAleatoria.comida.layer == 6)
+            else if(comidaAleatoria.comida.layer == 12)
             {
                 comidaAleatoria.comida.layer = 21;
             }
@@ -121,11 +121,11 @@ public class Hervir : MonoBehaviour
             isHervir = false;
             hervir2 =false;
             comidaAleatoria.comida.SetActive(true);
-            if(comidaAleatoria.comida.layer== 12)
+            if(comidaAleatoria.comida.layer== 13)
             {
-                comidaAleatoria.comida.layer = 20;
+                comidaAleatoria.comida.layer = 22;
             }
-            else if(comidaAleatoria.comida.layer == 6)
+            else if(comidaAleatoria.comida.layer == 12)
             {
                 comidaAleatoria.comida.layer = 21;
             }
@@ -136,11 +136,11 @@ public class Hervir : MonoBehaviour
             isHervir = false;
             hervir3 =false;
             comidaAleatoria.comida.SetActive(true);
-            if(comidaAleatoria.comida.layer== 12)
+            if(comidaAleatoria.comida.layer== 13)
             {
-                comidaAleatoria.comida.layer = 20;
+                comidaAleatoria.comida.layer = 22;
             }
-            else if(comidaAleatoria.comida.layer == 6)
+            else if(comidaAleatoria.comida.layer == 12)
             {
                 comidaAleatoria.comida.layer = 21;
             }
@@ -151,11 +151,11 @@ public class Hervir : MonoBehaviour
             isHervir = false;
             hervir4 =false;
             comidaAleatoria.comida.SetActive(true);
-            if(comidaAleatoria.comida.layer== 12)
+            if(comidaAleatoria.comida.layer== 13)
             {
-                comidaAleatoria.comida.layer = 20;
+                comidaAleatoria.comida.layer = 22;
             }
-            else if(comidaAleatoria.comida.layer == 6)
+            else if(comidaAleatoria.comida.layer == 12)
             {
                 comidaAleatoria.comida.layer = 21;
             }
@@ -166,26 +166,26 @@ public class Hervir : MonoBehaviour
             isHervir = false;
             hervir5 =false;
             comidaAleatoria.comida.SetActive(true);
-            if(comidaAleatoria.comida.layer== 12)
+            if(comidaAleatoria.comida.layer== 13)
             {
-                comidaAleatoria.comida.layer = 20;
+                comidaAleatoria.comida.layer = 22;
             }
-            else if(comidaAleatoria.comida.layer == 6)
+            else if(comidaAleatoria.comida.layer == 12)
             {
                 comidaAleatoria.comida.layer = 21;
             }
             
         }
-        else if(hervir6 == true && tiempoHervir == timerReal.segundosActuales)
+        else if(hervir12 == true && tiempoHervir == timerReal.segundosActuales)
         {
             isHervir = false;
-            hervir6 =false;
+            hervir12 =false;
             comidaAleatoria.comida.SetActive(true);
-            if(comidaAleatoria.comida.layer== 12)
+            if(comidaAleatoria.comida.layer== 13)
             {
-                comidaAleatoria.comida.layer = 20;
+                comidaAleatoria.comida.layer = 22;
             }
-            else if(comidaAleatoria.comida.layer == 6)
+            else if(comidaAleatoria.comida.layer == 12)
             {
                 comidaAleatoria.comida.layer = 21;
             }

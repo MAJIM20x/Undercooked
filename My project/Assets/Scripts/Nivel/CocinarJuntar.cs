@@ -10,7 +10,7 @@ public class CocinarJuntar : MonoBehaviour
     private GameObject vacio;
     private int tiempoHervir;   
     public Rigidbody2D rb;
-    public GameObject spawner;
+    private GameObject spawner;
     public GameObject[] prefrabs;
     public Transform posicion;
 
@@ -74,6 +74,7 @@ public class CocinarJuntar : MonoBehaviour
             return;
         }
         comidasAleatorias = GetComponentsInChildren<ComodiaAleatoria>();
+        
 
         /* 
         

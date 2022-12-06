@@ -47,7 +47,7 @@ public class Cliente : MonoBehaviour
             valorActual = random.Next(0, ComidasCanvas.Length);
             ComidasCanvas[valorRandom2].SetActive(true);
         }
-        if(timerReal.segundosActuales == 59&& timerReal.minutosActuales == 1 )
+        if(timerReal.segundosActuales == 0&& timerReal.minutosActuales == 2 )
         {
             print("hola2");
             ComidasCanvas[valorRandom2].SetActive(false);
@@ -65,7 +65,7 @@ public class Cliente : MonoBehaviour
 
             ComidasCanvas[valorRandom4].SetActive(true);
         }
-        if(timerReal.segundosActuales == 59 && timerReal.minutosActuales == 0 )
+        if(timerReal.segundosActuales == 0 && timerReal.minutosActuales == 1 )
         {
               
             print("hola4");
@@ -79,12 +79,7 @@ public class Cliente : MonoBehaviour
             
             print("hola5");
             ComidasCanvas[valorRandom5].SetActive(false);
-            ComidasCanvas[valorRandom6].SetActive(true);
-
-        }
-        if(timerReal.segundosActuales == 1 && timerReal.minutosActuales ==0 )
-        {
-            ComidasCanvas[valorRandom6].SetActive(false);
+            
         }
 
 

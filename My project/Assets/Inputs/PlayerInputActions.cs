@@ -28,15 +28,6 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
             ""id"": ""0a92f5d8-8be0-451a-a244-6d3495a97b7a"",
             ""actions"": [
                 {
-                    ""name"": ""Movement"",
-                    ""type"": ""Value"",
-                    ""id"": ""62762fa8-622a-4609-b6e3-a14dfb85a190"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
                     ""name"": ""MovementDpad"",
                     ""type"": ""Value"",
                     ""id"": ""a08770f6-6908-4d36-9674-f6f18ad205ef"",
@@ -47,17 +38,6 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 }
             ],
             ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""4b35204f-a5e7-49c4-b55c-c32e9ce8106b"",
-                    ""path"": ""<Gamepad>/leftStick"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Movement"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
                 {
                     ""name"": """",
                     ""id"": ""25ffcf1a-1e77-4641-b895-3a967fe6803e"",
@@ -144,7 +124,6 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
 }");
         // Movement
         m_Movement = asset.FindActionMap("Movement", throwIfNotFound: true);
-        m_Movement_Movement = m_Movement.FindAction("Movement", throwIfNotFound: true);
         m_Movement_MovementDpad = m_Movement.FindAction("MovementDpad", throwIfNotFound: true);
         // Interactions
         m_Interactions = asset.FindActionMap("Interactions", throwIfNotFound: true);
@@ -210,13 +189,11 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
     // Movement
     private readonly InputActionMap m_Movement;
     private IMovementActions m_MovementActionsCallbackInterface;
-    private readonly InputAction m_Movement_Movement;
     private readonly InputAction m_Movement_MovementDpad;
     public struct MovementActions
     {
         private @PlayerInputActions m_Wrapper;
         public MovementActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Movement => m_Wrapper.m_Movement_Movement;
         public InputAction @MovementDpad => m_Wrapper.m_Movement_MovementDpad;
         public InputActionMap Get() { return m_Wrapper.m_Movement; }
         public void Enable() { Get().Enable(); }
@@ -227,9 +204,6 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         {
             if (m_Wrapper.m_MovementActionsCallbackInterface != null)
             {
-                @Movement.started -= m_Wrapper.m_MovementActionsCallbackInterface.OnMovement;
-                @Movement.performed -= m_Wrapper.m_MovementActionsCallbackInterface.OnMovement;
-                @Movement.canceled -= m_Wrapper.m_MovementActionsCallbackInterface.OnMovement;
                 @MovementDpad.started -= m_Wrapper.m_MovementActionsCallbackInterface.OnMovementDpad;
                 @MovementDpad.performed -= m_Wrapper.m_MovementActionsCallbackInterface.OnMovementDpad;
                 @MovementDpad.canceled -= m_Wrapper.m_MovementActionsCallbackInterface.OnMovementDpad;
@@ -237,9 +211,6 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
             m_Wrapper.m_MovementActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @Movement.started += instance.OnMovement;
-                @Movement.performed += instance.OnMovement;
-                @Movement.canceled += instance.OnMovement;
                 @MovementDpad.started += instance.OnMovementDpad;
                 @MovementDpad.performed += instance.OnMovementDpad;
                 @MovementDpad.canceled += instance.OnMovementDpad;
@@ -298,7 +269,6 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
     public InteractionsActions @Interactions => new InteractionsActions(this);
     public interface IMovementActions
     {
-        void OnMovement(InputAction.CallbackContext context);
         void OnMovementDpad(InputAction.CallbackContext context);
     }
     public interface IInteractionsActions

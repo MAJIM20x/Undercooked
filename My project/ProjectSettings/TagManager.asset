@@ -41,3 +41,36 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Piso
+    uniqueID: 4230929519
+    locked: 0
+  - name: Paredes
+    uniqueID: 289370437
+    locked: 0
+  - name: Cocina
+    uniqueID: 2152534717
+    locked: 0
+  - name: CocinaInteractiva
+    uniqueID: 1254716369
+    locked: 0
+  - name: Jugadores
+    uniqueID: 1937424785
+    locked: 0
+  - name: Platos
+    uniqueID: 2767898629
+    locked: 0
+  - name: Decoracion Interior
+    uniqueID: 2676412559
+    locked: 0
+  - name: Techo Bordes
+    uniqueID: 2892584887
+    locked: 0
+  - name: Techo F
+    uniqueID: 23066065
+    locked: 0
+  - name: Sillas y  Mesas
+    uniqueID: 614082467
+    locked: 0
+  - name: Comida
+    uniqueID: 2807113963
+    locked: 0

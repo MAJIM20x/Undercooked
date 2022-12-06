@@ -23,6 +23,7 @@ public class grabObject : MonoBehaviour
     [SerializeField] bool isOnRangeItem = false;
     [SerializeField] bool isOnRangeHolder = false;
     
+    
     //Void Start
     void Awake()
     {   
@@ -49,7 +50,9 @@ public class grabObject : MonoBehaviour
             currentItem = currentCollisionesItem.transform;
             currentItem.parent = grabItem;
             currentItem.transform.position = grabItem.position;
-            
+            //Destroy(currentCollisionesItem.GetComponent<Rigidbody2D>());
+            currentItemBC = currentCollisionesItem.GetComponent<BoxCollider2D>();
+            currentItemBC.enabled = false;
             hasItem = true;
             animator.SetBool("isGrab", true);
         }
@@ -71,16 +74,8 @@ public class grabObject : MonoBehaviour
             animator.SetBool("isGrab", false);
             
 
-            if(hasItem)
-
-            {   
-                hasItem = false;
-                this.currentItem.parent = null;
-                this.transform.position = new Vector2((int)this.transform.position.x + animator.GetFloat("horizontal"),(int)this.transform.position.y + animator.GetFloat("vertical"));
-                this.currentItem = null;
-                
-                animator.SetBool("isGrab", false);
-            }
+            hasItem = false;
+            
         }
 
     }
@@ -119,7 +114,7 @@ public class grabObject : MonoBehaviour
         
     }
 
-  
+ 
   
     
 }

@@ -19,6 +19,7 @@ public class Freir : MonoBehaviour
     public PolloScripts pollo;
     public PapaScripts papa;
     public CarneScripts carne;
+    public bool isFriendo = false;
 
 
     //Metodo que verifica si esta en la zona 
@@ -63,6 +64,7 @@ public class Freir : MonoBehaviour
             {
                 print("helloWort");
                 tiempoFreir = timerReal.segundosActuales -5; 
+                isFriendo = true;
                 if(polloGuardado !=null)
                 {
                     pollo.desaparecer();

@@ -52,7 +52,6 @@ public class grabObject1 : MonoBehaviour
             currentItem = currentCollisionesItem.transform;
             currentItem.parent = grabItem;
             currentItem.transform.position = grabItem.position;
-            //Destroy(currentCollisionesItem.GetComponent<Rigidbody2D>());
             currentItemBC = currentCollisionesItem.GetComponent<BoxCollider2D>();
             currentItemBC.enabled = false;
             hasItem = true;
@@ -66,9 +65,8 @@ public class grabObject1 : MonoBehaviour
         if(hasItem && playerInputActions.Interactions.Drop.ReadValue<float>() > 0.1f && isOnRangeHolder)
         {   
               
-            //currentCollisionesItem.GetComponent<BoxCollider2D>().enabled = true;
             this.currentItem.parent = null;
-            //currentItem.position = new Vector2((int)this.transform.position.x + animator.GetFloat("horizontal"),(int)this.transform.position.y + animator.GetFloat("vertical"));
+            
             currentItemBC.enabled = true;
             this.currentItem.position = currentHolder.position;
             this.currentItem.parent = currentHolder;

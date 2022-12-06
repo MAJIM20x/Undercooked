@@ -4,31 +4,21 @@ using UnityEngine;
 
 public class Cliente : MonoBehaviour
 {
-    private int valorRandom1;
-    private int valorRandom2;
-    private int valorRandom3;
-    private int valorRandom4;
-    private int valorRandom5;
-    private int valorRandom6;
+    public int valorRandom1;
+    public int valorRandom2;
+    public int valorRandom3;
+    public int valorRandom4;
+    public int valorRandom5;
+    public int valorRandom6;
     public GameObject[] ComidasCanvas;
-    public GameObject[] Ensalada;
-    public GameObject[] Hamburguesa;
-    public GameObject[] PapasFritas;
-    public GameObject[] Pollito;
-    public GameObject[] Sushi;
     public System.Random random = new System.Random();
-    public List<GameObject[]> listaComidas;
     public TimerReal timerReal;
     public int valorActual;
 
     private void Start()
     {
-        this.listaComidas = new List<GameObject[]>();
-        listaComidas.Add(Ensalada);
-        listaComidas.Add(Hamburguesa);
-        listaComidas.Add(PapasFritas);
-        listaComidas.Add(Pollito);
-        listaComidas.Add(Sushi);
+        
+      
 
         valorRandom1 = random.Next(0,ComidasCanvas.Length);
         valorRandom2 = random.Next(0,ComidasCanvas.Length);
@@ -50,14 +40,14 @@ public class Cliente : MonoBehaviour
             ComidasCanvas[valorRandom1].SetActive(true);
             print(valorActual);
         }
-        if(timerReal.segundosActuales  == 24 && timerReal.minutosActuales == 2 )
+        if(timerReal.segundosActuales  == 30 && timerReal.minutosActuales == 2 )
         {
             print("hola1");
             ComidasCanvas[valorRandom1].SetActive(false);
             valorActual = random.Next(0, ComidasCanvas.Length);
             ComidasCanvas[valorRandom2].SetActive(true);
         }
-        if(timerReal.segundosActuales == 48 && timerReal.minutosActuales == 1 )
+        if(timerReal.segundosActuales == 59&& timerReal.minutosActuales == 1 )
         {
             print("hola2");
             ComidasCanvas[valorRandom2].SetActive(false);
@@ -66,7 +56,7 @@ public class Cliente : MonoBehaviour
             ComidasCanvas[valorRandom3].SetActive(true);
 
         }
-        if(timerReal.segundosActuales == 12 && timerReal.minutosActuales == 1 )
+        if(timerReal.segundosActuales == 30 && timerReal.minutosActuales == 1 )
         {
             
             print("hola3");
@@ -75,7 +65,7 @@ public class Cliente : MonoBehaviour
 
             ComidasCanvas[valorRandom4].SetActive(true);
         }
-        if(timerReal.segundosActuales == 36 && timerReal.minutosActuales == 0 )
+        if(timerReal.segundosActuales == 59 && timerReal.minutosActuales == 0 )
         {
               
             print("hola4");
@@ -84,11 +74,17 @@ public class Cliente : MonoBehaviour
 
             ComidasCanvas[valorRandom5].SetActive(true);
         }
-        if(timerReal.segundosActuales == 0 && timerReal.minutosActuales ==0 )
+        if(timerReal.segundosActuales == 30 && timerReal.minutosActuales ==0 )
         {
             
             print("hola5");
             ComidasCanvas[valorRandom5].SetActive(false);
+            ComidasCanvas[valorRandom6].SetActive(true);
+
+        }
+        if(timerReal.segundosActuales == 1 && timerReal.minutosActuales ==0 )
+        {
+            ComidasCanvas[valorRandom6].SetActive(false);
         }
 
 

@@ -49,13 +49,7 @@ public class grabObject : MonoBehaviour
             currentItem = currentCollisionesItem.transform;
             currentItem.parent = grabItem;
             currentItem.transform.position = grabItem.position;
-<<<<<<< Updated upstream
             
-=======
-            //Destroy(currentCollisionesItem.GetComponent<Rigidbody2D>());
-            currentItemBC = currentCollisionesItem.GetComponent<BoxCollider2D>();
-            currentItemBC.enabled = false;
->>>>>>> Stashed changes
             hasItem = true;
             animator.SetBool("isGrab", true);
         }
@@ -77,7 +71,6 @@ public class grabObject : MonoBehaviour
             animator.SetBool("isGrab", false);
             
 
-<<<<<<< Updated upstream
             if(hasItem)
 
             {   
@@ -88,10 +81,6 @@ public class grabObject : MonoBehaviour
                 
                 animator.SetBool("isGrab", false);
             }
-=======
-            hasItem = false;
-            
->>>>>>> Stashed changes
         }
 
     }

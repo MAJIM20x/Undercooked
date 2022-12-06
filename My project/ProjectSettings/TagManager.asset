@@ -3,39 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Items
-  - Holder
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Palta
+  - 
   - Water
   - UI
-<<<<<<< Updated upstream
-  - Pollo
-  - Lechuga
-  - Carne
-  - Pan
-  - Papa
-  - Pescado
-  - Arroz
-  - Ensalada
-  - hamburguesa
-  - PapasFritasPlato
-  - Pollito
-  - Sushi
-  - CarneCocida
-  - PapasFritas
-  - ArrozCocido
-  - PolloCocido
-  - PolloFrito
-  - TomatePicado
-  - PescadoPicado
-  - Tomate
-  - PapasCortadas
-=======
   - 
   - 
   - 
@@ -57,7 +32,6 @@ TagManager:
   - 
   - 
   - 
->>>>>>> Stashed changes
   - 
   - 
   - 
@@ -66,28 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Piso
-    uniqueID: 4230929519
-    locked: 0
-  - name: Cocina
-    uniqueID: 2152534717
-    locked: 0
-  - name: Paredes
-    uniqueID: 289370437
-    locked: 0
-  - name: CocinaInteractiva
-    uniqueID: 1254716369
-    locked: 0
-  - name: Jugadores
-    uniqueID: 1937424785
-    locked: 0
-  - name: Platos
-    uniqueID: 2767898629
-    locked: 0
-  - name: Techo Bordes
-    uniqueID: 2892584887
-    locked: 0
-  - name: Techo F
-    uniqueID: 23066065
     locked: 0

@@ -3,37 +3,39 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Holder
+  - Items
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Palta
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Tomate
+  - Carne
+  - Lechuga
+  - Pan
+  - Papa
+  - Pescado
+  - Pollo
+  - Arroz
+  - TomatePicado
+  - CarnePicada
+  - CarneFrita
+  - CarnePicadaFrita
+  - PapaPicada
+  - PapaFrita
+  - pescadoPicado
+  - PolloCocido
+  - PolloFrito
+  - ArrozCocido
+  - Ensalada
+  - Hamburguesa
+  - PolloFrito
+  - PapasFritras
+  - Sushi
   - 
   - 
   - 
@@ -42,6 +44,7 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Piso
+<<<<<<< Updated upstream
     uniqueID: 4230929519
     locked: 0
   - name: Paredes
@@ -73,4 +76,28 @@ TagManager:
     locked: 0
   - name: Comida
     uniqueID: 2807113963
+=======
+    uniqueID: 3976682451
+    locked: 0
+  - name: paredes
+    uniqueID: 2783886499
+    locked: 0
+  - name: techobordes
+    uniqueID: 819330811
+    locked: 0
+  - name: techoFondo
+    uniqueID: 114886691
+    locked: 0
+  - name: Cocina
+    uniqueID: 2189121595
+    locked: 0
+  - name: cocinaInteractiva
+    uniqueID: 2659256567
+    locked: 0
+  - name: ItemsHolders
+    uniqueID: 144017927
+    locked: 0
+  - name: Instrumentos
+    uniqueID: 2476227233
+>>>>>>> Stashed changes
     locked: 0

@@ -5,7 +5,7 @@ using UnityEngine;
 public class CocinarJuntar : MonoBehaviour
 {
     [SerializeField] private bool isInside = false;
-    private ComodiaAleatoria comidaAleatoria;
+    private ComodiaAleatoria[] comidasAleatorias;
     public TimerReal timerReal;
     private GameObject vacio;
     private int tiempoHervir;   
@@ -21,7 +21,7 @@ public class CocinarJuntar : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player")  )
         {
-          
+            
             isInside= true;
             print("PintamosTodaLaCasa");
             
@@ -37,45 +37,80 @@ public class CocinarJuntar : MonoBehaviour
             print("SinDejarCaerUnaGotaDeQueEsEsoo");
         }
     }
+
+    private void FoodVerifier(ComodiaAleatoria[] comidas, int layer1, int layer2, int layer3, int prefabIndex,int newFoodLayer)
+    {
+        List<int> foodList = new List<int>();
+        foodList.Add(layer1);
+        foodList.Add(layer2);
+        foodList.Add(layer3);
+        foreach(var comodia in comidas)
+        {
+            if(foodList.Contains(comodia.comida.layer))
+            {
+                foodList.Remove(comodia.comida.layer);
+            }
+        }
+        if(foodList.Count == 0) DestroyFood(comidas);
+        spawner = Instantiate(prefrabs[prefabIndex], new Vector3(posicion.position.x, posicion.position.y,0),Quaternion.identity);
+        spawner.layer = newFoodLayer;
+    }
+
+    private void DestroyFood(ComodiaAleatoria[] comidas)
+    {
+        foreach(var comodia in comidas)
+        {
+            Destroy(comodia.gameObject);
+        }
+    }
+
+    
+
+
     private void Update() 
     {
-        if(isInside)
+        if(transform.childCount != 6)
         {
-            if(comidaAleatoria.comida.layer ==21 && comidaAleatoria.comida.layer == 7 && comidaAleatoria.comida.layer == 23)
-            {
-            if(comidaAleatoria.comida.layer ==21)
+            return;
+        }
+        comidasAleatorias = GetComponentsInChildren<ComodiaAleatoria>();
+
+        /* 
+        
+        // ensalada
+            if(comidaAleatoria.comida.layer ==8)
             {
                 Destroy(comidaAleatoria.comida);
             }
-            else if(comidaAleatoria.comida.layer == 7)
+            else if(comidaAleatoria.comida.layer == 21)
             {
                 Destroy(comidaAleatoria.comida);
             }
-            else if(comidaAleatoria.comida.layer == 23)
+            else if(comidaAleatoria.comida.layer == 14)
             {
                 Destroy(comidaAleatoria.comida);
             }
             spawner = Instantiate(prefrabs[0], new Vector3(posicion.position.x, posicion.position.y,0),Quaternion.identity);
-            spawner.layer =13;
-  
-            }
-            else if(comidaAleatoria.comida.layer == 9 && comidaAleatoria.comida.layer == 18 && comidaAleatoria.comida.layer == 7)
-            {
+            spawner.layer =24;
+            //hamurguesa
+
             if(comidaAleatoria.comida.layer ==9)
             {
                 Destroy(comidaAleatoria.comida);
             }
-            else if(comidaAleatoria.comida.layer == 18)
+            else if(comidaAleatoria.comida.layer == 16)
             {
                 Destroy(comidaAleatoria.comida);
             }
-            else if(comidaAleatoria.comida.layer == 7)
+            else if(comidaAleatoria.comida.layer == 8)
             {
                 Destroy(comidaAleatoria.comida);
             }
             spawner = Instantiate(prefrabs[1], new Vector3(posicion.position.x, posicion.position.y,0),Quaternion.identity);
-            spawner.layer =14;
+            spawner.layer =25;
             }
+            //PolloFrito
+
             else if(comidaAleatoria.comida.layer == 22 && comidaAleatoria.comida.layer == 22 & comidaAleatoria.comida.layer == 19)
             {
             if(comidaAleatoria.comida.layer ==22)
@@ -86,14 +121,16 @@ public class CocinarJuntar : MonoBehaviour
             {
                 Destroy(comidaAleatoria.comida);
             }
-            else if(comidaAleatoria.comida.layer == 29)
+            else if(comidaAleatoria.comida.layer == 19)
             {
                 Destroy(comidaAleatoria.comida);
             }
             spawner = Instantiate(prefrabs[2], new Vector3(posicion.position.x, posicion.position.y,0),Quaternion.identity);
-            spawner.layer =16;
+            spawner.layer =26;
             }
-            else if(comidaAleatoria.comida.layer == 19 && comidaAleatoria.comida.layer == 19 && comidaAleatoria.comida.layer == 19)
+            //PapasFritas
+
+            else if(comidaAleatoria.comida.layer == 19 && comidaAleatoria.comida.layer == 19&& comidaAleatoria.comida.layer == 19)
             {
             if(comidaAleatoria.comida.layer ==19)
             {
@@ -108,11 +145,12 @@ public class CocinarJuntar : MonoBehaviour
                 Destroy(comidaAleatoria.comida);
             }
             spawner = Instantiate(prefrabs[3], new Vector3(posicion.position.x, posicion.position.y,0),Quaternion.identity);
-            spawner.layer =15;
+            spawner.layer =27;
             }
-            else if(comidaAleatoria.comida.layer == 24 &&comidaAleatoria.comida.layer == 20 &&comidaAleatoria.comida.layer == 3)
+            //Sushi
+            else if(comidaAleatoria.comida.layer == 23 &&comidaAleatoria.comida.layer == 20 &&comidaAleatoria.comida.layer == 3)
             {
-            if(comidaAleatoria.comida.layer ==24)
+            if(comidaAleatoria.comida.layer ==23)
             {
                 Destroy(comidaAleatoria.comida);
             }
@@ -125,18 +163,14 @@ public class CocinarJuntar : MonoBehaviour
                 Destroy(comidaAleatoria.comida);
             }
             spawner = Instantiate(prefrabs[4], new Vector3(posicion.position.x, posicion.position.y,0),Quaternion.identity);
-            spawner.layer =17;
+            spawner.layer =28;
             }
         
         }
-    }
-        
-        
 
-    
-    private void Awake() 
-    {
-        comidaAleatoria = FindObjectOfType<ComodiaAleatoria>();
+
+        */
     }
+    
     
 }

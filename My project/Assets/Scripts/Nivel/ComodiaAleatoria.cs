@@ -52,15 +52,15 @@ public class ComodiaAleatoria : MonoBehaviour
                     comida.tag = "Items";
                     if(contador == 0)//tomate
                     {
-                        comida.layer = 25;
+                        comida.layer = 6;
                     }
                     else if(contador == 1)//carne 
                     {
-                        comida.layer = 8;
+                        comida.layer = 7;
                     }
                     else if(contador == 2)//lechuga
                     {
-                        comida.layer = 7; 
+                        comida.layer = 8; 
                     }
                     else if(contador == 3)//palta
                     {
@@ -80,7 +80,11 @@ public class ComodiaAleatoria : MonoBehaviour
                     }
                     else if(contador == 7)//pollo
                     {
-                        comida.layer = 6;
+                        comida.layer = 12;
+                    }
+                    else if (contador == 8)//arroz
+                    {
+                        comida.layer =13;
                     }
                     
                     
